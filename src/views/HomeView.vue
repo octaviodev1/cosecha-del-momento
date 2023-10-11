@@ -1,9 +1,17 @@
 <template>
   <div>
-    <h1>Hola mundo</h1>
+    <TextSearch></TextSearch>
   </div>
 </template>
 
-<script setup>
+<script>
+import TextSearch from '../components/TextSearch.vue';
 
+export default {
+  components: {
+    TextSearch,
+  }
+}
 </script>
+
+<style lang="scss" scoped></style>
