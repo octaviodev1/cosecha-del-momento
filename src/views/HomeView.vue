@@ -1,6 +1,6 @@
 <template>
-<TopNav></TopNav>
-  <div>
+  <TopNav></TopNav>
+  <div class="flex justify-end m-5">
     <TextSearch @search-text-updated="searching"></TextSearch>
   </div>
 </template>
