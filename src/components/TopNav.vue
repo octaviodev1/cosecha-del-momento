@@ -1,5 +1,5 @@
 <template>
-    <header class="bg-yellow sticky w-screen">
+    <header class="bg-yellow sticky w-full">
         <nav class="flex items-center justify-between">
             <div class="ml-10">
                 <RouterLink to="/"><img src="../assets/logo_header.svg"></RouterLink>
@@ -9,7 +9,8 @@
                 <RouterLink to="/test" class="p-3" :class="{ 'active-link': $route.path === '/test' }">Calendario
                 </RouterLink>
                 <RouterLink to="/" class="p-3">Comunidades Autónomas</RouterLink>
-                <RouterLink to="/" class="p-3">Conócenos</RouterLink>
+                <RouterLink to="/about" class="p-3" :class="{ 'active-link': $route.path === '/about' }">Conócenos
+                </RouterLink>
                 <RouterLink to="/" class="p-3">Dona / Aporta</RouterLink>
             </div>
         </nav>
