@@ -1,8 +1,12 @@
 <template>
   <TopNav></TopNav>
-  <FilterComponent />
-  <div class="flex justify-end m-5">
-    <TextSearch @search-text-updated="searching"></TextSearch>
+  <div>
+    <div class="flex justify-end m-5">
+      <TextSearch @search-text-updated="searching"></TextSearch>
+    </div>
+    <div class="flex flex-col w-[28rem] justify-start ml-4 mb-4">
+      <FilterComponent />
+    </div>
   </div>
   <FooterInfo></FooterInfo>
 </template>
