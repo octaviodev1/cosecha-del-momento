@@ -20,15 +20,21 @@
   </ul>
 
   <SeasonsFilterComponent />
+  <div class="my-5">
+    <FilterByCommunities />
+  </div>
 </template>
 <script>
 import TextSearch from "./TextSearch.vue";
 import SeasonsFilterComponent from "./SeasonsFilterComponent.vue";
+import FilterByCommunities from "./FilterByCommunities.vue";
+
 export default {
   name: "FilterComponent",
   components: {
     TextSearch,
     SeasonsFilterComponent,
+    FilterByCommunities
   },
 };
 </script>
