@@ -1,4 +1,6 @@
 <template>
+  <TextSearch />
+
   <h3 class="mb-5 text-lg font-medium">FILTRA TIPO</h3>
   <ul class="grid w-full gap-6 md:grid-cols-2">
     <li>
@@ -20,9 +22,12 @@
   <SeasonsFilterComponent />
 </template>
 <script>
+import TextSearch from "./TextSearch.vue";
 import SeasonsFilterComponent from "./SeasonsFilterComponent.vue";
 export default {
+  name: "FilterComponent",
   components: {
+    TextSearch,
     SeasonsFilterComponent,
   },
 };
