@@ -54,6 +54,6 @@
 
 <script>
 export default {
-  name: "SeasonsFilterComponent",
+  name: "FilterBySeason",
 };
 </script>

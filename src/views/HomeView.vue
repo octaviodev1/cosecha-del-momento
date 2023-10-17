@@ -2,7 +2,7 @@
   <TopNav></TopNav>
   <div>
     <div class="flex flex-col w-[28rem] justify-start ml-4 mb-4">
-      <FilterComponent />
+      <Filters />
     </div>
   </div>
   <FooterInfo></FooterInfo>
@@ -10,13 +10,13 @@
 
 <script>
 import TopNav from "@/components/TopNav.vue";
-import FilterComponent from "../components/FilterComponent.vue";
+import Filters from "../components/Filters.vue";
 import FooterInfo from "../components/FooterInfo.vue";
 
 export default {
   components: {
     TopNav,
-    FilterComponent,
+    Filters,
     FooterInfo,
   },
   methods: {

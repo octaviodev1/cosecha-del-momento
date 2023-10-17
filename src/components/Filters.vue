@@ -1,7 +1,7 @@
 <template>
-  <TextSearch />
-  <FilterType />
-  <SeasonsFilterComponent />
+  <FilterByText />
+  <FilterByType />
+  <FilterBySeason />
   <div class="my-5">
     <FilterByCommunities />
   </div>
@@ -9,17 +9,17 @@
 </template>
 
 <script>
-import TextSearch from "./TextSearch.vue";
-import FilterType from "./FilterType.vue";
-import SeasonsFilterComponent from "./SeasonsFilterComponent.vue";
+import FilterByText from "./FilterByText.vue";
+import FilterByType from "./FilterByType.vue";
+import FilterBySeason from "./FilterBySeason.vue";
 import FilterByCommunities from "./FilterByCommunities.vue";
 
 export default {
   name: "FilterComponent",
   components: {
-    TextSearch,
-    FilterType,
-    SeasonsFilterComponent,
+    FilterByText,
+    FilterByType,
+    FilterBySeason,
     FilterByCommunities,
   },
 };
