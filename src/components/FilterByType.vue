@@ -4,14 +4,14 @@
         <li>
             <input type="radio" id="fruits" name="filter" value="fruits" class="hidden peer" required />
             <label for="fruits"
-                class="inline-flex items-center justify-center w-full p-5 bg-white border rounded-lg cursor-pointer peer-checked:border-green peer-checked:text-white peer-checked:bg-green hover:text-green">
+                class="select-none inline-flex items-center justify-center w-full p-5 bg-white border rounded-lg cursor-pointer peer-checked:border-green peer-checked:text-white peer-checked:bg-green hover:text-green">
                 <div class="w-full text-3xl font-bold text-center">FRUTAS</div>
             </label>
         </li>
         <li>
             <input type="radio" id="vegetables" name="filter" value="vegetables" class="hidden peer" />
             <label for="vegetables"
-                class="inline-flex items-center justify-center w-full p-5 bg-white border rounded-lg cursor-pointer peer-checked:border-green peer-checked:text-white peer-checked:bg-green hover:text-green">
+                class="select-none inline-flex items-center justify-center w-full p-5 bg-white border rounded-lg cursor-pointer peer-checked:border-green peer-checked:text-white peer-checked:bg-green hover:text-green">
                 <div class="w-full text-3xl font-bold text-center">VERDURAS</div>
             </label>
         </li>
