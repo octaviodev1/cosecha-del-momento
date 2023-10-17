@@ -15,7 +15,7 @@ import {
   initTE,
 } from "tw-elements";
 export default {
-  name: "TextSearch",
+  name: "FilterByText",
   data() {
     return {
       text: '',
