@@ -15,7 +15,7 @@ import FilterBySeason from "./FilterBySeason.vue";
 import FilterByCommunities from "./FilterByCommunities.vue";
 
 export default {
-  name: "FilterComponent",
+  name: "FiltersSection",
   components: {
     FilterByText,
     FilterByType,
