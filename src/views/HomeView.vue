@@ -1,15 +1,17 @@
 <template>
-  <TopNav></TopNav>
+    <TopNav></TopNav>
+    <FooterInfo></FooterInfo>
 </template>
 
 <script>
 import TopNav from "@/components/TopNav.vue";
-
+import FooterInfo from "../components/FooterInfo.vue";
 export default {
-
-  components: {
-    TopNav,
-  },
+    name: "HomeView",
+    components: {
+        TopNav,
+        FooterInfo,
+    },
 }
 </script>
 

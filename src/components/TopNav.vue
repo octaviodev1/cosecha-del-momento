@@ -1,16 +1,15 @@
 <template>
-    <header class="bg-palette-yellow fixed w-screen">
+    <header class="bg-yellow sticky w-full">
         <nav class="flex items-center justify-between">
             <div class="ml-10">
                 <RouterLink to="/"><img src="../assets/logo_header.svg"></RouterLink>
             </div>
             <div class="flex mr-10 space-x-10 font-bold">
-                <RouterLink to="/" class="p-3" :class="{ 'active-link': $route.path === '/' }">Catálogo</RouterLink>
-                <RouterLink to="/test" class="p-3" :class="{ 'active-link': $route.path === '/test' }">Calendario
+                <RouterLink to="/" class="p-3" :class="{ 'active-link': $route.path === '/' }">Inicio</RouterLink>
+                <RouterLink to="/catalogue" class="p-3" :class="{ 'active-link': $route.path === '/catalogue' }">Catálogo
                 </RouterLink>
-                <RouterLink to="/" class="p-3">Comunidades Autónomas</RouterLink>
-                <RouterLink to="/" class="p-3">Conócenos</RouterLink>
-                <RouterLink to="/" class="p-3">Dona / Aporta</RouterLink>
+                <RouterLink to="/about" class="p-3" :class="{ 'active-link': $route.path === '/about' }">Conócenos
+                </RouterLink>
             </div>
         </nav>
     </header>
