@@ -21,7 +21,7 @@
             <!--First item-->
             <div class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 data-te-carousel-active data-te-carousel-item style="backface-visibility: hidden">
-                <img src="../assets/img/calabazas.jpg" class="block w-full" alt="..." />
+                <img loading="lazy" src="../assets/img/calabazas.jpg" class="block w-full" alt="..." />
                 <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
                     <h5 class="text-xl">First slide label</h5>
                     <p>
@@ -32,7 +32,7 @@
             <!--Second item-->
             <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 data-te-carousel-item style="backface-visibility: hidden">
-                <img src="../assets/img/viñedo.jpg" class="block w-full" alt="..." />
+                <img loading="lazy" src="../assets/img/viñedo.jpg" class="block w-full" alt="..." />
                 <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
                     <h5 class="text-xl">Second slide label</h5>
                     <p>
@@ -43,7 +43,7 @@
             <!--Third item-->
             <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 data-te-carousel-item style="backface-visibility: hidden">
-                <img src="../assets/img/platanos.jpg" class="block w-full" alt="..." />
+                <img loading="lazy" src="../assets/img/platanos.jpg" class="block w-full" alt="..." />
                 <div class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
                     <h5 class="text-xl">Third slide label</h5>
                     <p>
