@@ -19,8 +19,9 @@
                 data-te-carousel-active data-te-carousel-item style="backface-visibility: hidden">
                 <img loading="lazy" src="../assets/img/naranjos.jpg" class="block w-full" alt="..." />
                 <div class="absolute top-60 left-48 hidden py-5  text-white md:block">
-                    <h2 class="mb-5 text-4xl font-bold">!Bienvenido a Cosecha del Momento¡</h2>
-                    <p>Descubre la riqueza de la agricultura española a través de nuestra amplia gama de frutas y verduras.
+                    <h2 class="mb-5 text-6xl font-bold">!Bienvenido a Cosecha del Momento¡</h2>
+                    <p class="text-lg font-bold">Descubre la riqueza de la agricultura española a través de nuestra
+                        amplia gama de frutas y verduras.
                     </p>
                 </div>
             </div>
@@ -28,8 +29,9 @@
                 data-te-carousel-item style="backface-visibility: hidden">
                 <img loading="lazy" src="../assets/img/viñedo.jpg" class="block w-full" alt="..." />
                 <div class="absolute top-60 left-48 hidden py-5  text-white md:block">
-                    <h2 class="mb-5 text-4xl font-bold">!Bienvenido a Cosecha del Momento¡</h2>
-                    <p>Te proporcionamos información detallada sobre cada producto y cuándo es la temporada ideal para
+                    <h2 class="mb-5 text-6xl font-bold">!Bienvenido a Cosecha del Momento¡</h2>
+                    <p class="text-lg font-bold">Te proporcionamos información detallada sobre cada producto y cuándo es la
+                        temporada ideal para
                         disfrutarlos.
                     </p>
                 </div>
@@ -38,8 +40,9 @@
                 data-te-carousel-item style="backface-visibility: hidden">
                 <img loading="lazy" src="../assets/img/platanos.jpg" class="block w-full" alt="..." />
                 <div class="absolute top-60 left-48 hidden py-5  text-white md:block">
-                    <h2 class="mb-5 text-4xl font-bold">!Bienvenido a Cosecha del Momento¡</h2>
-                    <p>¡Súmate a la frescura y la diversidad de la producción española de alimentos! ¿En qué te gustaría
+                    <h2 class="mb-5 text-6xl font-bold">!Bienvenido a Cosecha del Momento¡</h2>
+                    <p class="text-lg font-bold">¡Súmate a la frescura y la diversidad de la producción española de
+                        alimentos! ¿En qué te gustaría
                         sumergirte hoy?
                     </p>
                 </div>
@@ -70,11 +73,19 @@
                 class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
         </button>
     </div>
+    <div class="flex flex-col mt-16 mb-24 justify-center items-center ">
+        <h3 class="text-xl">Accede a nuestra sección de frutas y verduras pulsando aquí:</h3>
+        <div class="flex flex-row justify-center items-center gap-40">
+            <img src="https://iili.io/JFvEJae.png" alt="">
+            <RouterLink to="/catalogue"
+                class="inline-flex bg-green rounded-md text-lg text-white py-10 px-14 font-bold transition duration-300 ease-in-out hover:scale-110 hover:bg-yellow">
+                CATÁLOGO
+            </RouterLink>
+            <img src="https://iili.io/JFvEAAJ.png" alt="">
+        </div>
 
-    <div class="flex justify-center align-middle my-10">
-        <RouterLink to="/catalogue" class="bg-green rounded-md text-lg text-white p-8 font-bold">Catálogo
-        </RouterLink>
     </div>
+
 
     <FooterInfo></FooterInfo>
 </template>
