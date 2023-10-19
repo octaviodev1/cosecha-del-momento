@@ -4,7 +4,7 @@
     <div class="flex flex-col w-[28rem] justify-start ml-4 mb-4">
       <FiltersSection />
     </div>
-    <div>
+    <div class="flex-1">
       <CatalogueContent />
     </div>
   </div>
@@ -23,11 +23,6 @@ export default {
     FiltersSection,
     FooterInfo,
     CatalogueContent
-  },
-  methods: {
-    searching(text) {
-      console.log(text);
-    },
   },
 };
 </script>
