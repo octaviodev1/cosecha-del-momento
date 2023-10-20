@@ -17,7 +17,7 @@
         <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
             <div class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 data-te-carousel-active data-te-carousel-item style="backface-visibility: hidden">
-                <img loading="lazy" src="../assets/img/naranjos.jpg" class="block w-full" alt="..." />
+                <img src="../assets/img/naranjos.jpg" class="block w-full" alt="..." />
                 <div class="absolute top-60 left-48 hidden py-5  text-white md:block">
                     <h2 class="mb-5 text-6xl font-bold">!Bienvenido a Cosecha del Momento¡</h2>
                     <p class="text-lg font-bold">Descubre la riqueza de la agricultura española a través de nuestra
@@ -27,7 +27,7 @@
             </div>
             <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 data-te-carousel-item style="backface-visibility: hidden">
-                <img loading="lazy" src="../assets/img/viñedo.jpg" class="block w-full" alt="..." />
+                <img src="../assets/img/viñedo.jpg" class="block w-full" alt="..." />
                 <div class="absolute top-60 left-48 hidden py-5  text-white md:block">
                     <h2 class="mb-5 text-6xl font-bold">!Bienvenido a Cosecha del Momento¡</h2>
                     <p class="text-lg font-bold">Te proporcionamos información detallada sobre cada producto y cuándo es la
@@ -38,7 +38,7 @@
             </div>
             <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 data-te-carousel-item style="backface-visibility: hidden">
-                <img loading="lazy" src="../assets/img/platanos.jpg" class="block w-full" alt="..." />
+                <img src="../assets/img/platanos.jpg" class="block w-full" alt="..." />
                 <div class="absolute top-60 left-48 hidden py-5  text-white md:block">
                     <h2 class="mb-5 text-6xl font-bold">!Bienvenido a Cosecha del Momento¡</h2>
                     <p class="text-lg font-bold">¡Súmate a la frescura y la diversidad de la producción española de
