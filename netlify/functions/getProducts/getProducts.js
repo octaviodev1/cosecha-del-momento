@@ -12,9 +12,9 @@ const {
 require("dotenv").config();
 
 const firebaseConfig = {
-  apiKey: process.env.VITE_API_KEY,
-  authDomain: process.env.VITE_AUTH_DOMAIN,
-  projectId: process.env.VITE_PROJECT_ID,
+  apiKey: process.env["VITE_API_KEY"] || process.env["API_KEY"],
+  authDomain: process.env["VITE_AUTH_DOMAIN"] || process.env["AUTH_DOMAIN"],
+  projectId: process.env["VITE_PROJECT_ID"] || process.env["PROJECT_ID"],
 };
 
 const app = initializeApp(firebaseConfig);
