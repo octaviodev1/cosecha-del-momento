@@ -1,7 +1,7 @@
 <template>
     <TopNav></TopNav>
     <div>
-        <img class="w-full" src="@/assets/FondoAboutUs.svg" alt="Sobre Nosotros">
+        <img class="w-full" src="https://iili.io/JF6o9Pn.jpg" alt="Sobre Nosotros">
         <div class="flex flex-col justify-center items-center">
             <h1 class="flex justify-center font-bold text-7xl bg-yellow p-9 w-full">SOBRE NOSOTROS</h1>
             <div class="w-2/3 flex flex-col">
@@ -22,9 +22,9 @@
                                 busco un
                                 proyecto profesional que me haga feliz y que me suponga un reto constante. De ahí mis
                                 primeros
-                                pasos formándome en programación... y es precisamente en esa recompensa visual que te regala
+                                pasos formándome en programación, y es precisamente en esa recompensa visual que te regala
                                 el
-                                Front, en el diseño... dónde me gustaría desarrollarme profesionalmente"
+                                Front, en el diseño, dónde me gustaría desarrollarme profesionalmente."
                             </p>
                             <a class="m-5" href="https://github.com/MartaLax"><img
                                     src="@/assets/social_media/github-blue.svg" alt="github"></a>
@@ -52,7 +52,7 @@
                                 front,
                                 poder seguir formándome para llegar a tener un perfil Full-Stack, dar respuesta a un
                                 exigente
-                                sector tecnológico, y con el tiempo, crecer y gestionar equipos de trabajo"</p>
+                                sector tecnológico, y con el tiempo, crecer y gestionar equipos de trabajo."</p>
                             <a class="m-5" href="https://github.com/braisvial"><img
                                     src="@/assets/social_media/github-green.svg" alt="github"></a>
                             <a class="m-5" href="https://www.linkedin.com/in/braisvila/"><img
