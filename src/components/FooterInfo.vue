@@ -101,7 +101,7 @@
                     </div>
                     <div class="flex justify-around items-center">
                         <img class="w-28 h-28" src="@/assets/logos/main-logo.svg" />
-                        <img class="w-28 h-28" src="@/assets/logos/goat-logo.png" />
+                        <img class="w-28 h-28" src="https://iili.io/JKBGul2.png" />
                     </div>
                 </div>
             </div>
