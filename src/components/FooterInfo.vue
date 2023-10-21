@@ -88,9 +88,13 @@
                                 <img src="@/assets/mail-icon.svg" alt="">
                                 <p class="text-neutral-600 dark:text-neutral-200">Contáctanos</p>
                             </RouterLink>
-                            <RouterLink to="" class="mb-4 flex items-center justify-center gap-2 md:justify-start">
+                            <RouterLink to="/terms" class="mb-4 flex items-center justify-center gap-2 md:justify-start">
                                 <img src="@/assets/terms-icon.svg" alt="">
-                                <p class="text-neutral-600 dark:text-neutral-200">Términos y servicios</p>
+                                <p class="text-neutral-600 dark:text-neutral-200">Términos de Servicios</p>
+                            </RouterLink>
+                            <RouterLink to="/policy" class="mb-4 flex items-center justify-center gap-2 md:justify-start">
+                                <img src="@/assets/security-icon.svg" alt="">
+                                <p class="text-neutral-600 dark:text-neutral-200">Política de Privacidad</p>
                             </RouterLink>
                         </div>
 

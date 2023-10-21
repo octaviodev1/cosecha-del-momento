@@ -1,4 +1,4 @@
-<template class>
+<template>
     <div class="relative h-screen">
         <TopNav />
         <div class=" w-3/4 my-[93px] mx-auto md:px-6">
