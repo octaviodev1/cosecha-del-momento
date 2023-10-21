@@ -1,5 +1,5 @@
 <template>
-    <div class="absolute flex bottom-0 justify-between w-full p-5 bg-yellow">
+    <div class="flex justify-between w-full p-5 bg-yellow">
 
         <div class="flex flex-col justify-center ml-32">
             <p class="mb-5">PLACEHOLDER: REDES DE CONTACTO/APARTADO CONOCENOS</p>
