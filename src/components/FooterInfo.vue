@@ -1,17 +1,10 @@
 <template>
-    <div class="flex justify-between w-full p-5 bg-yellow">
-
-        <div class="flex flex-col justify-center ml-32">
-            <p class="mb-5">PLACEHOLDER: REDES DE CONTACTO/APARTADO CONOCENOS</p>
-            <div class="flex justify-center items-center gap-5">
-                <p>
-                    Colaboración con
-                    <a class="font-bold no-underline hover:underline"
-                        href="https://www.eoi.es/es/programas/mbas-masters?course_modality_tid[]=18024&gclid=Cj0KCQjwmvSoBhDOARIsAK6aV7jluuNESn-65lyliMvEBjWhzNG0ZpIkh5XrOPKWTl3Y59O50J5wI1IaAoa0EALw_wcB"
-                        target="_blank">EOI</a>
-                </p>
-                <div class="w-1/3 h-8">
-                    <img src="@/assets/logo-eoi.png" />
+    <footer class="bg-yellow text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
+        <div class="w-3/4 mx-auto">
+            <div
+                class="flex items-center justify-center border-b-2 border-neutral-200 p-3 dark:border-neutral-500 lg:justify-between">
+                <div class="mr-12 hidden lg:block">
+                    <span>Conecta con nosotros en nuestras redes sociales:</span>
                 </div>
                 <!-- Social network icons container -->
                 <div class="flex justify-center">
@@ -118,12 +111,7 @@
             </div>
         </div>
 
-        <div class="flex flex-col items-center mr-32">
-            <img class="w-28 h-28" src="@/assets/logo_principal.svg" />
-            <p>© 2023 Cosecha del momento. Todos los derechos reservados.</p>
-        </div>
-
-    </div>
+    </footer>
 </template>
 
 <script>

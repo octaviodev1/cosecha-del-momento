@@ -1,5 +1,6 @@
+/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
@@ -19,5 +20,5 @@ export default {
     extend: {},
   },
   darkMode: "class",
-  plugins: ["tw-elements/dist/plugin.cjs"],
+  plugins: [require("tw-elements/dist/plugin.cjs")],
 };
