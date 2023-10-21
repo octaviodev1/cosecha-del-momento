@@ -8,7 +8,7 @@
                 <div>
                     <div class="flex flex-row items-center my-16">
                         <div>
-                            <img src="@/assets/img/telmadog.svg"
+                            <img src="https://iili.io/JF6d5B4.jpg"
                                 class="h-auto max-w-sm rounded-full shadow-lg dark:shadow-black/30" alt="martaTelmaDog">
                         </div>
                         <div class="flex flex-wrap mx-16">
@@ -38,7 +38,7 @@
 
                     <div class="flex flex-row-reverse items-center my-16">
                         <div>
-                            <img src="@/assets/img/luffycat.svg"
+                            <img src="https://iili.io/JF6d7El.jpg"
                                 class="h-auto max-w-sm rounded-full shadow-lg dark:shadow-black/30" alt="braisLuffyCat">
                         </div>
                         <div class="flex flex-wrap mx-16">
@@ -65,7 +65,7 @@
 
                     <div class="flex flex-row items-center my-16">
                         <div>
-                            <img src="@/assets/img/sexycat.svg"
+                            <img src="https://iili.io/JF6dY42.jpg"
                                 class="h-auto max-w-sm rounded-full shadow-lg dark:shadow-black/30" alt="octavioSexyCat">
                         </div>
                         <div class="flex flex-wrap mx-16">
