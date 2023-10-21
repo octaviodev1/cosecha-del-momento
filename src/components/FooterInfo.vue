@@ -51,9 +51,9 @@
                         </p>
                         <div class="flex justify-around items-center">
                             <a href="https://www.eoi.es/es" target="_blank"><img class="w-[150px] h-[40px]"
-                                    src="@/assets/logo-eoi.png" /></a>
+                                    src="@/assets/icons-footer/eoi-icon.png" /></a>
                             <a href="https://www.mapa.gob.es/es/" target="_blank"><img class="w-[150px] h-[40px]"
-                                    src="@/assets/ministerio.svg" /></a>
+                                    src="@/assets/icons-footer/ministerio-icon.svg" /></a>
                         </div>
                     </div>
 
@@ -63,16 +63,16 @@
                         </h6>
                         <div class="flex flex-col items-start">
                             <a href="https://tailwindcss.com/" class="mb-4 flex gap-2 w-fit" target="_blank">
-                                <img class="w-[30px] h-[25px]" src="@/assets/vue-icon.svg" alt="">
+                                <img class="w-[30px] h-[25px]" src="@/assets/icons-footer/vue-icon.svg" alt="">
                                 <p class="text-neutral-600 dark:text-neutral-200">Vue 3</p>
                             </a>
                             <a href="https://tailwindcss.com/" class="mb-4 flex gap-2 w-fit" target="_blank">
-                                <img class="w-[30px] h-[25px]" src="@/assets/tailwindcss-icon.svg" alt="">
+                                <img class="w-[30px] h-[25px]" src="@/assets/icons-footer/tailwindcss-icon.svg" alt="">
                                 <p class="text-neutral-600 dark:text-neutral-200">Tailwind
                                     Css</p>
                             </a>
                             <a href="https://firebase.google.com/?hl=es/" class="mb-4 flex gap-2 w-fit" target="_blank">
-                                <img class="w-[30px] h-[25px]" src="@/assets/firebase-icon.svg" alt="">
+                                <img class="w-[30px] h-[25px]" src="@/assets/icons-footer/firebase-icon.svg" alt="">
                                 <p class="text-neutral-600 dark:text-neutral-200">Firebase</p>
                             </a>
                         </div>
@@ -85,23 +85,23 @@
                         </h6>
                         <div class="flex flex-col items-start">
                             <RouterLink to="/contact" class="mb-4 flex items-center justify-center gap-2 md:justify-start">
-                                <img src="@/assets/mail-icon.svg" alt="">
+                                <img src="@/assets/icons-footer/mail-icon.svg" alt="">
                                 <p class="text-neutral-600 dark:text-neutral-200">Contáctanos</p>
                             </RouterLink>
                             <RouterLink to="/terms" class="mb-4 flex items-center justify-center gap-2 md:justify-start">
-                                <img src="@/assets/terms-icon.svg" alt="">
+                                <img src="@/assets/icons-footer/terms-icon.svg" alt="">
                                 <p class="text-neutral-600 dark:text-neutral-200">Términos de Servicios</p>
                             </RouterLink>
                             <RouterLink to="/policy" class="mb-4 flex items-center justify-center gap-2 md:justify-start">
-                                <img src="@/assets/security-icon.svg" alt="">
+                                <img src="@/assets/icons-footer/security-icon.svg" alt="">
                                 <p class="text-neutral-600 dark:text-neutral-200">Política de Privacidad</p>
                             </RouterLink>
                         </div>
 
                     </div>
                     <div class="flex justify-around items-center">
-                        <img class="w-28 h-28" src="@/assets/logo_principal.svg" />
-                        <img class="w-28 h-28" src="@/assets/logo-goat.png" />
+                        <img class="w-28 h-28" src="@/assets/logos/main-logo.svg" />
+                        <img class="w-28 h-28" src="@/assets/logos/goat-logo.png" />
                     </div>
                 </div>
             </div>
