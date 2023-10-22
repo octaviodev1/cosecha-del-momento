@@ -5,7 +5,8 @@
             <span class="text-green">&#9660;</span> </button>
         <div :class="{ 'dropdown-content': true, 'show': isOpen }">
             <label v-for="option in options" :key="option.value">
-                <input type="checkbox" v-model="selectedOptions" :value="option.value">
+                <input type="checkbox" @change="$emit('region', selectedOptions)" v-model="selectedOptions"
+                    :value="option.value">
                 {{ option.label }}
             </label>
         </div>
@@ -24,21 +25,21 @@ export default {
             isOpen: false,
             selectedOptions: [],
             options: [
-                { label: 'Andalucía', value: 'Andalucia' },
-                { label: 'Aragón', value: 'Aragon' },
+                { label: 'Andalucía', value: 'Andalucía' },
+                { label: 'Aragón', value: 'Aragón' },
                 { label: 'Asturias', value: 'Asturias' },
                 { label: 'Baleares', value: 'Baleares' },
                 { label: 'Canarias', value: 'Canarias' },
                 { label: 'Cantabria', value: 'Cantabria' },
-                { label: 'Castilla-La Mancha', value: 'Mancha' },
-                { label: 'Castilla y León', value: 'Leon' },
+                { label: 'Castilla-La Mancha', value: 'Castilla La Mancha' },
+                { label: 'Castilla y León', value: 'Castilla y León' },
                 { label: 'Cataluña', value: 'Cataluña' },
                 { label: 'Extremadura', value: 'Extremadura' },
                 { label: 'Galicia', value: 'Galicia' },
                 { label: 'Madrid', value: 'Madrid' },
                 { label: 'Murcia', value: 'Murcia' },
                 { label: 'Navarra', value: 'Navarra' },
-                { label: 'País Vasco', value: 'Pais Vasco' },
+                { label: 'País Vasco', value: 'País Vasco' },
                 { label: 'La Rioja', value: 'La Rioja' },
                 { label: 'Valencia', value: 'Valencia' },
             ],
@@ -54,7 +55,7 @@ export default {
             arrow.style.transform = this.isOpen ? 'rotate(90deg)' : 'rotate(0deg)';
         },
     },
-
+    emits: ['region']
 }
 </script>
 
@@ -62,7 +63,6 @@ export default {
 .custom-dropdown {
     display: inline-block;
     margin: 10px;
-
 }
 
 button {

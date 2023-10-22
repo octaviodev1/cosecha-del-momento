@@ -10,20 +10,13 @@
 <script>
 import CardContent from './CardContent.vue';
 export default {
-    data() {
-        return {
-            products: ''
+    props: {
+        products: {
+            type: Object,
+            default() {
+                return {}
+            }
         }
-    },
-    mounted() {
-        fetch('/.netlify/functions/getProducts')
-            .then(response => response.json())
-            .then(data => {
-                this.products = data;
-            })
-            .catch(error => {
-                console.error("Error al recuperar los datos: ", error)
-            })
     },
     components: {
         CardContent,

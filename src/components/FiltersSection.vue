@@ -1,11 +1,11 @@
 <template>
-  <FilterByText />
-  <FilterByType />
-  <FilterBySeason />
-  <div class="my-5">
-    <FilterByCommunities />
+  <div>
+    <FilterByText />
+    <FilterByType @type-selection="registerType" />
+    <FilterBySeason @season-filter="registerSeason" />
+    <FilterByCommunities @region="registerRegion" />
+    <button @click="$emit('filter', filter)" class="p-3 bg-green w-full">Filtrar</button>
   </div>
-  <button class="p-3 bg-green">Filtrar</button>
 </template>
 
 <script>
@@ -16,11 +16,32 @@ import FilterByCommunities from "./FilterByCommunities.vue";
 
 export default {
   name: "FiltersSection",
+  data() {
+    return {
+      filter: {
+        type: String,
+        season: Array,
+        region: Array
+      }
+    }
+  },
   components: {
     FilterByText,
     FilterByType,
     FilterBySeason,
     FilterByCommunities,
   },
+  methods: {
+    registerType(type) {
+      this.filter.type = type
+    },
+    registerSeason(season) {
+      this.filter.season = season
+    },
+    registerRegion(region) {
+      this.filter.region = region
+    }
+  },
+  emits: ['filter']
 };
 </script>

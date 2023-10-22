@@ -5,7 +5,8 @@
 
   <ul class="grid w-full gap-6 md:grid-cols-2">
     <li>
-      <input type="checkbox" id="spring-option" value="" class="hidden peer" />
+      <input @change="$emit('seasonFilter', checkedSeasons)" v-model="checkedSeasons" type="checkbox" id="spring-option"
+        value="Primavera" class="hidden peer" />
       <label for="spring-option"
         class="select-none inline-flex items-center justify-between w-full p-5 bg-white border-2 rounded-lg cursor-pointer peer-checked:border-green hover:text-green peer-checked:text-white peer-checked:bg-green">
         <div class="block">
@@ -16,7 +17,8 @@
       </label>
     </li>
     <li>
-      <input type="checkbox" id="summer-option" value="" class="hidden peer" />
+      <input @change="$emit('seasonFilter', checkedSeasons)" v-model="checkedSeasons" type="checkbox" id="summer-option"
+        value="Verano" class="hidden peer" />
       <label for="summer-option"
         class="select-none inline-flex items-center justify-between w-full p-5 bg-white border-2 rounded-lg cursor-pointer peer-checked:border-green hover:text-green peer-checked:text-white peer-checked:bg-green">
         <div class="block">
@@ -28,7 +30,8 @@
   </ul>
   <ul class="grid w-full gap-6 md:grid-cols-2 mt-4">
     <li>
-      <input type="checkbox" id="fall-option" value="" class="hidden peer" />
+      <input @change="$emit('seasonFilter', checkedSeasons)" v-model="checkedSeasons" type="checkbox" id="fall-option"
+        value="Otoño" class="hidden peer" />
       <label for="fall-option"
         class="select-none inline-flex items-center justify-between w-full p-5 bg-white border-2 rounded-lg cursor-pointer peer-checked:border-green hover:text-green peer-checked:text-white peer-checked:bg-green">
         <div class="block">
@@ -40,7 +43,8 @@
       </label>
     </li>
     <li>
-      <input type="checkbox" id="winter-option" value="" class="hidden peer" />
+      <input @change="$emit('seasonFilter', checkedSeasons)" v-model="checkedSeasons" type="checkbox" id="winter-option"
+        value="Invierno" class="hidden peer" />
       <label for="winter-option"
         class="select-none inline-flex items-center justify-between w-full p-5 bg-white border-2 rounded-lg cursor-pointer peer-checked:border-green hover:text-green peer-checked:text-white peer-checked:bg-green">
         <div class="block">
@@ -55,5 +59,11 @@
 <script>
 export default {
   name: "FilterBySeason",
+  data() {
+    return {
+      checkedSeasons: []
+    }
+  },
+  emits: ['seasonFilter']
 };
 </script>
