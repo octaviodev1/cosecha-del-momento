@@ -11,5 +11,3 @@ import FooterInfo from './components/FooterInfo.vue';
     <FooterInfo />
   </div>
 </template>
-
-<style scoped></style>

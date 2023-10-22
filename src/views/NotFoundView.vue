@@ -1,6 +1,4 @@
 <template>
-    <TopNav />
-
     <div class="flex flex-col justify-center items-center">
         <img class="w-96 h-96" :src="selectedImg" alt="error404">
         <div class="w-1/2">
@@ -21,13 +19,9 @@
             class="inline-flex bg-green rounded-3xl text-lg text-white my-10 py-10 px-14 font-bold transition duration-300 ease-in-out hover:scale-110 hover:bg-success-700">
             Volver a Inicio</RouterLink>
     </div>
-
-    <FooterInfo />
 </template>
 
 <script>
-import TopNav from "@/components/TopNav.vue";
-import FooterInfo from "../components/FooterInfo.vue";
 export default {
     name: "NotFoundView",
     data() {
@@ -49,10 +43,6 @@ export default {
             const randomNumber = Math.floor(Math.random() * this.urlImgs.length);
             this.selectedImg = this.urlImgs[randomNumber]
         }
-    },
-    components: {
-        TopNav,
-        FooterInfo
-    },
+    }
 }
 </script>

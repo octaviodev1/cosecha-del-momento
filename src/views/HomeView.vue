@@ -15,9 +15,10 @@
         <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
             <div class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 data-te-carousel-active data-te-carousel-item style="backface-visibility: hidden">
-                <img src="../assets/img-home/naranjos.jpg" class="block w-full" alt="..." />
+                <img src="../assets/img-home/naranjos.webp" class="block w-full h-full"
+                    alt="naranjos" />
                 <div class="absolute top-60 left-48 hidden py-5  text-white md:block">
-                    <h2 class="mb-5 text-6xl font-bold">!Bienvenido a Cosecha del Momento¡</h2>
+                    <h2 class="mb-5 text-6xl font-bold">¡Bienvenido a Cosecha del Momento!</h2>
                     <p class="text-lg font-bold">Descubre la riqueza de la agricultura española a través de nuestra
                         amplia gama de frutas y verduras.
                     </p>
@@ -25,7 +26,7 @@
             </div>
             <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 data-te-carousel-item style="backface-visibility: hidden">
-                <img src="../assets/img-home/viñedo.jpg" class="block w-full" alt="..." />
+                <img src="../assets/img-home/viñedo.webp" class="block w-full h-full" alt="vinedo" />
                 <div class="absolute top-60 left-48 hidden py-5  text-white md:block">
                     <h2 class="mb-5 text-6xl font-bold">!Bienvenido a Cosecha del Momento¡</h2>
                     <p class="text-lg font-bold">Te proporcionamos información detallada sobre cada producto y cuándo es la
@@ -36,7 +37,7 @@
             </div>
             <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 data-te-carousel-item style="backface-visibility: hidden">
-                <img src="../assets/img-home/platanos.jpg" class="block w-full" alt="..." />
+                <img src="../assets/img-home/platanos.webp" class="block w-full h-full" alt="platanos" />
                 <div class="absolute top-60 left-48 hidden py-5  text-white md:block">
                     <h2 class="mb-5 text-6xl font-bold">!Bienvenido a Cosecha del Momento¡</h2>
                     <p class="text-lg font-bold">¡Súmate a la frescura y la diversidad de la producción española de
@@ -74,12 +75,12 @@
     <div class="flex flex-col mt-16 mb-24 justify-center items-center ">
         <h3 class="text-xl">Accede a nuestra sección de frutas y verduras pulsando aquí:</h3>
         <div class="flex flex-row justify-center items-center gap-40">
-            <img src="https://iili.io/JFvEJae.png" alt="">
+            <img src="../assets/img-home/calabazas.webp" alt="calabazas" class="h-52 w-52">
             <RouterLink to="/catalogue"
                 class="inline-flex bg-green rounded-md text-lg text-white py-10 px-14 font-bold transition duration-300 ease-in-out hover:scale-110 hover:bg-yellow">
                 CATÁLOGO
             </RouterLink>
-            <img src="https://iili.io/JFvEAAJ.png" alt="">
+            <img src="../assets/img-home/fresas.webp" alt="fresas" class="h-52 w-52">
         </div>
 
     </div>
