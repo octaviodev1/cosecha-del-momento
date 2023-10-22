@@ -2,8 +2,8 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 import CatalogueView from "../views/CatalogueView.vue";
 import ContactView from "../views/ContactView.vue";
-import TermsView from "../views/TermsView.vue"
-import PolicyView from "../views/PolicyView.vue"
+import TermsView from "../views/TermsView.vue";
+import PolicyView from "../views/PolicyView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -21,7 +21,7 @@ const router = createRouter({
     {
       path: "/about",
       name: "about",
-      component: () => import ("../views/AboutView.vue"),
+      component: () => import("../views/AboutView.vue"),
     },
     {
       path: "/contact",
@@ -37,6 +37,11 @@ const router = createRouter({
       path: "/policy",
       name: "policy",
       component: PolicyView,
+    },
+    {
+      path: "/:catchAll(.*)",
+      name: "404",
+      component: () => import("../views/NotFoundView.vue"),
     },
   ],
 });
