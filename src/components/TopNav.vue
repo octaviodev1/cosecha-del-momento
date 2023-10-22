@@ -2,13 +2,17 @@
     <header class="bg-yellow sticky w-full">
         <nav class="flex items-center justify-between">
             <div class="ml-10">
-                <RouterLink to="/"><img src="../assets/logos/header-logo.svg"></RouterLink>
+                <RouterLink to="/"><img src="../assets/logos/header-logo.svg" class="h-28 w-52"
+                        alt="logo cose cha del momento"></RouterLink>
             </div>
             <div class="flex mr-10 space-x-10 font-bold">
-                <RouterLink to="/" class="p-3" :class="{ 'active-link': $route.path === '/' }">Inicio</RouterLink>
-                <RouterLink to="/catalogue" class="p-3" :class="{ 'active-link': $route.path === '/catalogue' }">Catálogo
+                <RouterLink to="/" class="p-3" :class="{ 'active-link': $route.path === '/' }" aria-label="Inicio">Inicio
                 </RouterLink>
-                <RouterLink to="/about" class="p-3" :class="{ 'active-link': $route.path === '/about' }">Conócenos
+                <RouterLink to="/catalogue" class="p-3" :class="{ 'active-link': $route.path === '/catalogue' }"
+                    aria-label="Catálogo">Catálogo
+                </RouterLink>
+                <RouterLink to="/about" class="p-3" :class="{ 'active-link': $route.path === '/about' }"
+                    aria-label="Conócenos">Conócenos
                 </RouterLink>
             </div>
         </nav>

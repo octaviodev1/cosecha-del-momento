@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import CardContent from './cardcontent.vue';
+import CardContent from './CardContent.vue';
 export default {
     data() {
         return {
