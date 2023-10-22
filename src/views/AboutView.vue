@@ -1,13 +1,13 @@
 <template>
     <div>
-        <img class="w-full" src="https://iili.io/JF6o9Pn.jpg" alt="Sobre Nosotros">
+        <img class="w-full h-fit" src="../assets/img-about/fondoAboutUs.webp" alt="Sobre Nosotros">
         <div class="flex flex-col justify-center items-center">
             <h1 class="flex justify-center font-bold text-7xl bg-yellow p-9 w-full">SOBRE NOSOTROS</h1>
             <div class="w-2/3 flex flex-col">
                 <div>
                     <div class="flex flex-row items-center my-16">
                         <div>
-                            <img src="https://iili.io/JF6d5B4.jpg"
+                            <img src="../assets/img-about/telmadog.webp"
                                 class="h-auto max-w-sm rounded-full shadow-lg dark:shadow-black/30" alt="martaTelmaDog">
                         </div>
                         <div class="flex flex-wrap mx-16">
@@ -37,7 +37,7 @@
 
                     <div class="flex flex-row-reverse items-center my-16">
                         <div>
-                            <img src="https://iili.io/JF6d7El.jpg"
+                            <img src="../assets/img-about/luffycat.webp"
                                 class="h-auto max-w-sm rounded-full shadow-lg dark:shadow-black/30" alt="braisLuffyCat">
                         </div>
                         <div class="flex flex-wrap mx-16">
@@ -64,7 +64,7 @@
 
                     <div class="flex flex-row items-center my-16">
                         <div>
-                            <img src="https://iili.io/JF6dY42.jpg"
+                            <img src="../assets/img-about/sexycat.webp"
                                 class="h-auto max-w-sm rounded-full shadow-lg dark:shadow-black/30" alt="octavioSexyCat">
                         </div>
                         <div class="flex flex-wrap mx-16">

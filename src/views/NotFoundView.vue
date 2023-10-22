@@ -28,10 +28,10 @@ export default {
         return {
             selectedImg: '',
             urlImgs: [
-                "https://iili.io/JKooCTN.png",
-                "https://iili.io/JKolwgV.jpg",
-                "https://iili.io/JKo1ODF.png",
-                "https://iili.io/JKo1NN1.png",
+                "https://iili.io/JKznGmQ.webp",
+                "https://iili.io/JKznVIV.webp",
+                "https://iili.io/JKznEkx.webp",
+                "https://iili.io/JKzn17j.webp",
             ]
         }
     },
