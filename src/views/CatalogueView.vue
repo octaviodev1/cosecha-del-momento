@@ -40,9 +40,9 @@ export default {
   },
   methods: {
     filterProducts(filter) {
-      console.log(filter);
+      console.log(typeof filter.type);
       this.filteredProducts = this.products
-      if (filter && typeof filter.type === 'object')
+      if (filter && typeof filter.type === 'string')
         this.filterByType(filter.type, this.filteredProducts)
       if (filter && typeof filter.season === 'object')
         this.filterBySeason(filter.season, this.filteredProducts)
