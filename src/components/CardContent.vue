@@ -13,6 +13,7 @@
 
 <script>
 export default {
+    name: 'CardContent',
     data() {
         return {
             display: false,
