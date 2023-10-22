@@ -1,5 +1,5 @@
 <template>
-    <div class=" w-3/4 my-[93px] mx-auto md:px-6">
+    <div class=" w-3/4 mt-20 mx-auto md:px-6">
         <section class="mb-32">
             <div class="flex flex-wrap">
                 <div class="mb-10 w-full shrink-0 grow-0 basis-auto md:mb-0 md:w-6/12 md:px-3 lg:px-6">
