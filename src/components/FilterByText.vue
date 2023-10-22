@@ -1,19 +1,24 @@
 <template>
-  <div class="relative mb-3 w-fit" data-te-input-wrapper-init>
-    <input type="text"
-      class="peer block min-h-[auto] w-fit bg-yellow rounded border-0 bg-transparent px-3 py-[0.32rem] leading-[1.6] outline-none transition-all duration-200 ease-linear focus:placeholder:opacity-100 peer-focus:text-primary data-[te-input-state-active]:placeholder:opacity-100 motion-reduce:transition-none dark:text-neutral-200 dark:placeholder:text-neutral-200 dark:peer-focus:text-primary [&:not([data-te-input-placeholder-active])]:placeholder:opacity-0"
-      id="searchInput" placeholder="Busca tu fruta o verdura" v-model="text" @keyup.enter="initSearch" />
-    <label for="searchInput"
-      class="pointer-events-none absolute left-3 top-0 mb-0 max-w-[90%] origin-[0_0] truncate pt-[0.37rem] leading-[1.6] text-neutral-500 transition-all duration-200 ease-out peer-focus:-translate-y-[0.9rem] peer-focus:scale-[0.8] peer-focus:text-primary peer-data-[te-input-state-active]:-translate-y-[0.9rem] peer-data-[te-input-state-active]:scale-[0.8] motion-reduce:transition-none dark:text-neutral-200 dark:peer-focus:text-primary">Busca
-      tu fruta o verdura</label>
+  <div class="py-4">
+    <label for="default-search" class="mb-2 text-sm font-medium text-gray sr-only">Search</label>
+    <div class="relative">
+      <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+        <svg class="w-4 h-4 text-green" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+          viewBox="0 0 20 20">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+            d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+        </svg>
+      </div>
+      <input type="search" id="default-search" v-model="text" @keyup.enter="initSearch"
+        class="block w-full p-4 pl-10 text-xl border border-green rounded-lg focus:ring-green" placeholder="Buscador...">
+      <button type="button" @click="initSearch"
+        class="text-white absolute right-2.5 bottom-[0.8rem] bg-green focus:ring-4 focus:outline-none focus:ring-green-light font-medium rounded-lg text-sm px-4 py-2">Buscar</button>
+    </div>
   </div>
 </template>
 
 <script>
-import {
-  Input,
-  initTE,
-} from "tw-elements";
+
 export default {
   name: "FilterByText",
   data() {
@@ -21,15 +26,13 @@ export default {
       text: '',
     }
   },
-  mounted() {
-    initTE({ Input });
-  },
   methods: {
     initSearch() {
       this.$emit("search-text-updated", this.text);
       this.text = '';
     },
   },
+  emits: ['search-text-updated']
 }
 </script>
 

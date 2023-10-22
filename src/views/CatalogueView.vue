@@ -3,11 +3,22 @@
     <div class="">
       <div
         class="flex flex-col w-[70%] justify-start ml-4 mb-4 rounded-2xl p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
-        <FiltersSection @filter="filterProducts" />
+        <FiltersSection @filter="filterProducts" @search="searchByText" />
       </div>
     </div>
-    <div v-if="products.length" class="flex-1 ml-5 overflow-y-scroll">
+    <div v-if="filteredProducts.length" class="flex-1 ml-5 overflow-y-scroll">
       <CatalogueContent :products="filteredProducts" />
+    </div>
+    <div v-else>
+      <div
+        class="block rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+        <h5 class="mb-2 text-2xl font-medium leading-tight text-neutral-800">
+          No hay resultados
+        </h5>
+        <p class="mb-4 text-base">
+          No hay ningún resultado con los parámetros seleccionados
+        </p>
+      </div>
     </div>
   </div>
 </template>
@@ -56,6 +67,12 @@ export default {
     },
     filterByRegion(region, arr) {
       this.filteredProducts = arr.filter(product => region.some(r => product.ORIGIN.includes(r)))
+    },
+    searchByText(text) {
+      console.log(text);
+      this.filteredProducts = this.products
+      if (text === '') return
+      this.filteredProducts = this.filteredProducts.filter(product => product.NAME.toLowerCase() === text.toLowerCase())
     }
   }
 };

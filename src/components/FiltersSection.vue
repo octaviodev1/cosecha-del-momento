@@ -1,10 +1,10 @@
 <template>
   <div>
-    <FilterByText />
+    <FilterByText @search-text-updated="registerText" />
     <FilterByType @type-selection="registerType" />
     <FilterBySeason @season-filter="registerSeason" />
     <FilterByCommunities @region="registerRegion" />
-    <button @click="$emit('filter', filter)" class="p-3 bg-green w-full">Filtrar</button>
+    <button @click="$emit('filter', filter)" class="p-3 bg-green text-white w-full">Filtrar</button>
   </div>
 </template>
 
@@ -32,6 +32,9 @@ export default {
     FilterByCommunities,
   },
   methods: {
+    registerText(text) {
+      this.$emit('search', text)
+    },
     registerType(type) {
       this.filter.type = type
     },
@@ -42,6 +45,6 @@ export default {
       this.filter.region = region
     }
   },
-  emits: ['filter']
+  emits: ['filter', 'search']
 };
 </script>
