@@ -28,10 +28,10 @@ export default {
         return {
             selectedImg: '',
             urlImgs: [
-                "https://iili.io/JKooCTN.png",
-                "https://iili.io/JKolwgV.jpg",
-                "https://iili.io/JKo1ODF.png",
-                "https://iili.io/JKo1NN1.png",
+                "/src/assets/img-404/gato_404.webp",
+                "/src/assets/img-404/naranja_mecanica.webp",
+                "/src/assets/img-404/naranja_mecanica_2.webp",
+                "/src/assets/img-404/naranja_mecanica_gato.webp",
             ]
         }
     },
