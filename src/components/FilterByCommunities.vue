@@ -2,7 +2,7 @@
     <div class="custom-dropdown">
         <button @click="toggleDropdown" data-te-ripple-init data-te-ripple-color="dark"
             class="text-lg font-medium mt-8">FILTRAR POR COMUNIDAD/ES
-            <span class="text-green">&#9660;</span> </button>
+            <span ref="arrow" class="text-green">&#9660;</span> </button>
         <div :class="{ 'dropdown-content': true, 'show': isOpen }">
             <label v-for="option in options" :key="option.value">
                 <input type="checkbox" @change="$emit('region', selectedOptions)" v-model="selectedOptions"
