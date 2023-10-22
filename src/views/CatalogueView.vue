@@ -40,7 +40,6 @@ export default {
   },
   methods: {
     filterProducts(filter) {
-      console.log(filter);
       this.filteredProducts = this.products
       if (filter && typeof filter.type === 'string')
         this.filterByType(filter.type, this.filteredProducts)
