@@ -1,5 +1,4 @@
 <template>
-    <TopNav />
     <div>Términos de Servicio
 
         Última actualización: [Fecha de la última actualización]
@@ -59,7 +58,6 @@
         correo electrónico de contacto].
 
         Gracias por utilizar [Nombre de tu sitio web]. Esperamos que disfrutes de nuestro contenido y servicios.</div>
-    <FooterInfo />
 </template>
 
 <script>
@@ -68,13 +66,7 @@ import {
     Input,
     initTE,
 } from "tw-elements";
-import TopNav from '../components/TopNav.vue';
-import FooterInfo from '../components/FooterInfo.vue';
 export default {
-    components: {
-        TopNav,
-        FooterInfo,
-    },
     methods: {
         redireccionarInicio() {
             this.$router.push('/');
