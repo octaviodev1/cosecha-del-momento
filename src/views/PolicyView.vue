@@ -1,5 +1,5 @@
 <template>
-    <div class="w-3/6 mx-auto my-10">
+    <div class="w-3/5 mx-auto my-10 p-20 shadow-2xl bg-[url('@/assets/paper.webp')] bg-cover">
         <h1 class="text-4xl text-center mb-10">Política de Privacidad</h1>
         <h2 class="text-xl ml-5 mb-5">Última actualización: 22 de Octubre de 2023</h2>
         <p class="mb-5">En Cosecha del Momento, respetamos tu privacidad y estamos comprometidos a proteger la
