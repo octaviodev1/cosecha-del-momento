@@ -40,18 +40,23 @@ export default {
   },
   methods: {
     filterProducts(filter) {
-      console.log(typeof filter.type);
+      console.log(filter);
       this.filteredProducts = this.products
       if (filter && typeof filter.type === 'string')
         this.filterByType(filter.type, this.filteredProducts)
-      if (filter && typeof filter.season === 'object')
+      if (filter && Array.isArray(filter.season) && filter.season.length)
         this.filterBySeason(filter.season, this.filteredProducts)
+      if (filter && Array.isArray(filter.region) && filter.region.length)
+        this.filterByRegion(filter.region, this.filteredProducts)
     },
     filterByType(type, arr) {
       this.filteredProducts = arr.filter(product => product.TYPE === type)
     },
     filterBySeason(season, arr) {
       this.filteredProducts = arr.filter(product => season.some(s => product.SEASON.includes(s)))
+    },
+    filterByRegion(region, arr) {
+      this.filteredProducts = arr.filter(product => region.some(r => product.ORIGIN.includes(r)))
     }
   }
 };

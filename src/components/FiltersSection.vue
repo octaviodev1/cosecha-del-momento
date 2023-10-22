@@ -3,9 +3,7 @@
     <FilterByText />
     <FilterByType @type-selection="registerType" />
     <FilterBySeason @season-filter="registerSeason" />
-    <div class="my-5">
-      <FilterByCommunities />
-    </div>
+    <FilterByCommunities @region="registerRegion" />
     <button @click="$emit('filter', filter)" class="p-3 bg-green w-full">Filtrar</button>
   </div>
 </template>
@@ -22,7 +20,8 @@ export default {
     return {
       filter: {
         type: String,
-        season: String
+        season: Array,
+        region: Array
       }
     }
   },
@@ -38,6 +37,9 @@ export default {
     },
     registerSeason(season) {
       this.filter.season = season
+    },
+    registerRegion(region) {
+      this.filter.region = region
     }
   },
   emits: ['filter']
