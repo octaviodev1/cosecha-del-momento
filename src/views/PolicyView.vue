@@ -1,5 +1,4 @@
 <template>
-    <TopNav />
     <div>Política de Privacidad
 
         Última actualización: 21/10/2023S
@@ -51,16 +50,7 @@
 
         Al usar nuestro sitio web, aceptas los términos y condiciones de esta Política de Privacidad. Gracias por confiar en
         Cosecha del Momento.</div>
-    <FooterInfo />
 </template>
 
 <script>
-import TopNav from '../components/TopNav.vue';
-import FooterInfo from '../components/FooterInfo.vue';
-export default {
-    components: {
-        TopNav,
-        FooterInfo,
-    },
-}
 </script>

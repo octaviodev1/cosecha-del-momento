@@ -1,5 +1,4 @@
 <template>
-    <TopNav></TopNav>
     <div>
         <img class="w-full" src="https://iili.io/JF6o9Pn.jpg" alt="Sobre Nosotros">
         <div class="flex flex-col justify-center items-center">
@@ -92,18 +91,11 @@
             </div>
         </div>
     </div>
-    <FooterInfo></FooterInfo>
 </template>
 
 <script>
-import TopNav from '../components/TopNav.vue';
-import FooterInfo from '../components/FooterInfo.vue';
 export default {
     name: "AboutView",
-    components: {
-        TopNav,
-        FooterInfo,
-    },
 }
 </script>
 

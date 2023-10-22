@@ -1,6 +1,4 @@
 <template>
-    <TopNav></TopNav>
-
     <div id="carousel" class="relative" data-te-carousel-init data-te-ride="carousel">
         <div class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
             data-te-carousel-indicators>
@@ -85,24 +83,16 @@
         </div>
 
     </div>
-
-
-    <FooterInfo></FooterInfo>
 </template>
 
 <script>
-import TopNav from "@/components/TopNav.vue";
-import FooterInfo from "../components/FooterInfo.vue";
+
 import {
     Carousel,
     initTE,
 } from "tw-elements";
 export default {
     name: "HomeView",
-    components: {
-        TopNav,
-        FooterInfo,
-    },
     mounted() {
         initTE({ Carousel });
     },
