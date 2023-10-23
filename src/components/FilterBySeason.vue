@@ -12,7 +12,6 @@
         <div class="block">
           <div class="w-full text-lg font-semibold">PRIMAVERA</div>
           <div class="w-full text-sm">Marzo, abril, mayo y junio.</div>
-          <br />
         </div>
       </label>
     </li>
