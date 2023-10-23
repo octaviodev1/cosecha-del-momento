@@ -1,5 +1,6 @@
 <template>
-    <footer class="bg-yellow text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left">
+    <footer
+        class="bg-yellow text-center text-neutral-600 dark:bg-neutral-600 dark:text-neutral-200 lg:text-left font-new-font">
         <div class="w-3/4 mx-auto">
             <div
                 class="flex items-center justify-center border-b-2 border-neutral-200 p-3 dark:border-neutral-500 lg:justify-between">

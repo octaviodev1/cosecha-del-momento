@@ -18,7 +18,11 @@ module.exports = {
       gray: "#898b75",
       transparent: "#ffffff00",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        'new-font' : ['PT Sans', 'sans-serif']
+      }
+    },
   },
   darkMode: "class",
   plugins: [require("tw-elements/dist/plugin.cjs")],

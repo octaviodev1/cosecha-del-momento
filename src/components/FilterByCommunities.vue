@@ -1,5 +1,5 @@
 <template>
-    <div class="custom-dropdown">
+    <div class="custom-dropdown font-new-font">
         <button @click="toggleDropdown" data-te-ripple-init data-te-ripple-color="dark"
             class="text-lg font-medium mt-8">FILTRAR POR COMUNIDAD/ES
             <span ref="arrow" class="text-green">&#9660;</span> </button>

@@ -12,11 +12,10 @@
                 class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
                 aria-label="Slide 3"></button>
         </div>
-        <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+        <div class="relative w-full overflow-hidden after:clear-both after:block after:content-[''] font-new-font">
             <div class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 data-te-carousel-active data-te-carousel-item style="backface-visibility: hidden">
-                <img src="../assets/img-home/naranjos.webp" class="block w-full h-full"
-                    alt="naranjos" />
+                <img src="../assets/img-home/naranjos.webp" class="block w-full h-full" alt="naranjos" />
                 <div class="absolute top-60 left-48 hidden py-5  text-white md:block">
                     <h2 class="mb-5 text-6xl font-bold">¡Bienvenido a Cosecha del Momento!</h2>
                     <p class="text-lg font-bold">Descubre la riqueza de la agricultura española a través de nuestra
@@ -72,7 +71,7 @@
                 class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
         </button>
     </div>
-    <div class="flex flex-col mt-16 mb-24 justify-center items-center ">
+    <div class="flex flex-col mt-16 mb-24 justify-center items-center font-new-font">
         <h3 class="text-xl">Accede a nuestra sección de frutas y verduras pulsando aquí:</h3>
         <div class="flex flex-row justify-center items-center gap-40">
             <img src="../assets/img-home/calabazas.webp" alt="calabazas" class="h-52 w-52">

@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col justify-center items-center">
+    <div class="flex flex-col justify-center items-center font-new-font">
         <img class="w-96 h-96" :src="selectedImg" alt="error404">
         <div class="w-1/2">
             <p class="leading-8">
