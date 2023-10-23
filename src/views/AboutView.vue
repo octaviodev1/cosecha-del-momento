@@ -12,18 +12,22 @@
                         </div>
                         <div class="flex flex-wrap mx-16">
                             <p><span class="font-bold text-3xl">Marta</span><br>
-                                "Se podría decir que soy un "culo inquieto"... llámalo curiosidad, anhelo de
-                                aprendizaje
-                                continuo. En lo laboral me considero competente y resolutiva. Llegué al turismo porque me
-                                encantan las distintas culturas, el conocimiento de idiomas y hacer de guía de alguien. Y
-                                aunque
-                                en esa aventura aprendí muchísimo, me sentí valorada y conseguí la ansiada estabilidad,
-                                busco un
-                                proyecto profesional que me haga feliz y que me suponga un reto constante. De ahí mis
-                                primeros
-                                pasos formándome en programación, y es precisamente en esa recompensa visual que te regala
-                                el
-                                Front, en el diseño, dónde me gustaría desarrollarme profesionalmente."
+                                "Podría decirse que tengo una naturaleza inquieta,
+                                impulsada por la curiosidad y el deseo constante de
+                                aprender. En el ámbito laboral, me considero
+                                competente y capaz de resolver problemas. Mi
+                                trayectoria me llevó al turismo debido a mi
+                                fascinación por las diferentes culturas, el dominio
+                                de idiomas y la posibilidad de servir como guía para
+                                otras personas. Aunque disfruté mucho de esta
+                                experiencia y encontré estabilidad, estoy en busca
+                                de un proyecto profesional que me brinde felicidad
+                                y desafíos continuos. Es por eso que decidí
+                                adentrarme en el mundo de la programación.
+                                Encuentro una gran satisfacción en el aspecto
+                                visual que ofrece el desarrollo Front-End,
+                                especialmente en el diseño. Es aquí donde deseo
+                                crecer profesionalmente y enfrentar nuevos retos."
                             </p>
                             <a class="m-5" href="https://github.com/MartaLax"><img
                                     src="@/assets/social_media/github-blue.svg" alt="github"></a>
