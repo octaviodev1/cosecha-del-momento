@@ -30,8 +30,8 @@ import CatalogueContent from "../components/CatalogueContent.vue";
 export default {
   data() {
     return {
-      products: Array,
-      filteredProducts: Array
+      products: [],
+      filteredProducts: []
     }
   },
   mounted() {
