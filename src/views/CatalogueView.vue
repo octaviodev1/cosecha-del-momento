@@ -6,7 +6,7 @@
       <FiltersSection @filter="filterProducts" @search="searchByText" />
     </div>
 
-    <div v-if="filteredProducts.length" class="flex-1 ml-5 overflow-y-scroll">
+    <div v-if="filteredProducts.length" class="flex-1 ml-5 p-4 overflow-y-scroll">
       <CatalogueContent :products="filteredProducts" />
     </div>
     <div v-else>
