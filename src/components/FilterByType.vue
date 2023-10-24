@@ -1,6 +1,6 @@
 <template>
-    <h3 class="mb-5 text-lg font-medium">FILTRA TIPO</h3>
-    <ul class="grid w-full gap-6 md:grid-cols-2">
+    <h3 class="mb-5 text-lg font-medium font-new-font">FILTRA TIPO</h3>
+    <ul class="grid w-full gap-6 md:grid-cols-2 font-new-font">
         <li>
             <input @change="$emit('typeSelection', choice)" v-model="choice" type="radio" id="fruits" value="Fruta"
                 class="hidden peer" required />

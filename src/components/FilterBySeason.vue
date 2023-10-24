@@ -1,9 +1,9 @@
 <template>
-  <h3 class="mb-5 text-lg font-medium mt-8">
+  <h3 class="mb-5 text-lg font-medium mt-8 font-new-font">
     FILTRA POR ESTACIÓN
   </h3>
 
-  <ul class="grid w-full gap-6 md:grid-cols-2">
+  <ul class="grid w-full gap-6 md:grid-cols-2 font-new-font">
     <li>
       <input @change="$emit('seasonFilter', checkedSeasons)" v-model="checkedSeasons" :checked="resetSeason"
         type="checkbox" id="spring-option" value="Primavera" class="hidden peer" />
@@ -12,7 +12,6 @@
         <div class="block">
           <div class="w-full text-lg font-semibold">PRIMAVERA</div>
           <div class="w-full text-sm">Marzo, abril, mayo y junio.</div>
-          <br />
         </div>
       </label>
     </li>
@@ -28,7 +27,7 @@
       </label>
     </li>
   </ul>
-  <ul class="grid w-full gap-6 md:grid-cols-2 mt-4">
+  <ul class="grid w-full gap-6 md:grid-cols-2 mt-4 font-new-font">
     <li>
       <input @change="$emit('seasonFilter', checkedSeasons)" v-model="checkedSeasons" :checked="resetSeason"
         type="checkbox" id="fall-option" value="Otoño" class="hidden peer" />

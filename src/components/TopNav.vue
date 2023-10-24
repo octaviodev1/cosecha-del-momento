@@ -1,5 +1,5 @@
 <template>
-    <header class="bg-yellow sticky w-full">
+    <header class="bg-yellow sticky w-full font-new-font">
         <nav class="flex items-center justify-between">
             <div class="ml-10">
                 <RouterLink to="/"><img src="../assets/logos/header-logo.svg" class="h-28 w-52"

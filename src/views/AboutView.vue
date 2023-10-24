@@ -1,7 +1,7 @@
 <template>
     <div>
         <img class="w-full h-fit" src="../assets/img-about/fondoAboutUs.webp" alt="Sobre Nosotros">
-        <div class="flex flex-col justify-center items-center">
+        <div class="flex flex-col justify-center items-center font-new-font">
             <h1 class="flex justify-center font-bold text-7xl bg-yellow p-9 w-full">SOBRE NOSOTROS</h1>
             <div class="w-2/3 flex flex-col">
                 <div>

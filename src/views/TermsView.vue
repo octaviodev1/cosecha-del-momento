@@ -1,5 +1,5 @@
 <template>
-    <div class="w-3/5 mx-auto my-10 p-20 shadow-2xl bg-[url('@/assets/paper.webp')] bg-cover">
+    <div class="w-3/5 mx-auto my-10 p-20 shadow-2xl bg-[url('@/assets/paper.webp')] bg-cover font-new-font">
         <h1 class="text-4xl text-center mb-10">Términos de Servicio</h1>
         <h2 class="text-xl ml-5 mb-5">Última actualización: 22 de Octubre de 2023</h2>
         <p class="mb-5">Bienvenido a Cosecha del Momento.</p>

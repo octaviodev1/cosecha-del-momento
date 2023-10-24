@@ -1,5 +1,5 @@
 <template>
-  <div class="py-4">
+  <div class="py-4 font-new-font">
     <label for="default-search" class="mb-2 text-sm font-medium text-gray sr-only">Search</label>
     <div class="relative">
       <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
