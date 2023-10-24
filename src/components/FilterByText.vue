@@ -18,7 +18,6 @@
 </template>
 
 <script>
-
 export default {
   name: "FilterByText",
   data() {
@@ -35,5 +34,3 @@ export default {
   emits: ['search-text-updated']
 }
 </script>
-
-<style scoped></style>
