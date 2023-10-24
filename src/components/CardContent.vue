@@ -1,17 +1,38 @@
 <template>
-    <div @click="click">
-        <img :src="IMG_URL" :alt=NAME>
-        <h1>{{ NAME }}</h1>
+    <!-- <div @click="click" class="w-1/3 max-w-sm rounded overflow-hidden shadow-lg p-4" data-te-collapse-init
+        data-te-ripple-init data-te-ripple-color="light" :data-te-target="`#${NAME}`">
+        <img class="w-full" :src="IMG_URL" :alt=NAME>
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">{{ NAME }}</div>
+        </div>
     </div>
-    <div v-show="display">
-        <h1>{{ DESCRIPTION }}</h1>
-        <h1>Meses de temporada: {{ MONTHS }}</h1>
-        <h1>Regiones de origen: {{ origin }}</h1>
-        <h1>Nombre cientifico: {{ SCIENTIFIC_NAME }}</h1>
-    </div>
+    <div class="!visible hidden" :id="NAME" data-te-collapse-item>
+        <div
+            class="block rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+            Some placeholder content for the collapse component. This panel is
+            hidden by default but revealed when the user activates the relevant
+            trigger.
+        </div>
+    </div> -->
+    <button
+        class="inline-block rounded shadow-sm bg-green px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal transition duration-150 ease-in-out"
+        data-te-toggle="popover" title="Dismissible popover" data-te-trigger="focus" :data-te-content="fullData"
+        data-te-placement="bottom" data-te-ripple-init data-te-ripple-color="light">
+        <img class="w-full" :src="IMG_URL" :alt=NAME>
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2">{{ NAME }}</div>
+        </div>
+    </button>
 </template>
 
 <script>
+import {
+    Popover,
+    Ripple,
+    initTE,
+} from "tw-elements";
+
+initTE({ Popover, Ripple });
 export default {
     name: 'CardContent',
     data() {
@@ -46,6 +67,16 @@ export default {
             type: String,
         }
 
+    },
+    computed: {
+        fullData() {
+            const data = {
+                name: this.NAME,
+                description: this.DESCRIPTION,
+                scientific_name: this.SCIENTIFIC_NAME
+            }
+            return JSON.stringify(data)
+        }
     },
     methods: {
         click() {
