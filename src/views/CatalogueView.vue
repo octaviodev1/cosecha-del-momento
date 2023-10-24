@@ -52,7 +52,7 @@ export default {
   methods: {
     filterProducts(filter) {
       this.filteredProducts = this.products
-      if (filter && typeof filter.type === 'string')
+      if (filter && typeof filter.type === 'string' && filter.type !== '')
         this.filterByType(filter.type, this.filteredProducts)
       if (filter && Array.isArray(filter.season) && filter.season.length)
         this.filterBySeason(filter.season, this.filteredProducts)

@@ -1,12 +1,12 @@
 <template>
-    <div class="custom-dropdown font-new-font">
-        <button @click="toggleDropdown" data-te-ripple-init data-te-ripple-color="dark"
-            class="text-lg font-medium mt-8">FILTRAR POR COMUNIDAD/ES
-            <span ref="arrow" class="text-green">&#9660;</span> </button>
+    <div class="custom-dropdown">
+        <button @click="toggleDropdown" data-te-ripple-init data-te-ripple-color="dark" class="text-lg font-medium mt-8"
+            tabindex="0">FILTRAR POR COMUNIDAD/ES
+            <span class="text-green">&#9660;</span> </button>
         <div :class="{ 'dropdown-content': true, 'show': isOpen }">
-            <label v-for="option in options" :key="option.value">
+            <label class="block mb-2 select-none cursor-pointer" v-for="option in options" :key="option.value">
                 <input type="checkbox" @change="$emit('region', selectedOptions)" v-model="selectedOptions"
-                    :value="option.value">
+                    :checked="resetCommunities" :value="option.value">
                 {{ option.label }}
             </label>
         </div>
@@ -45,17 +45,37 @@ export default {
             ],
         }
     },
+    created() {
+        let self = this;
+        window.addEventListener('click', function (e) {
+            if (!self.$el.contains(e.target)) {
+                self.isOpen = false;
+            }
+        })
+    },
     mounted() {
         initTE({ Ripple });
     },
     methods: {
         toggleDropdown() {
             this.isOpen = !this.isOpen;
-            const arrow = this.$refs.arrow;
-            arrow.style.transform = this.isOpen ? 'rotate(90deg)' : 'rotate(0deg)';
+        },
+        executeOnPropResetChange() {
+            if (this.resetCommunities) {
+                this.selectedOptions = [];
+                this.$emit('resetCommunitiesToFalse', false);
+            }
+        }
+    },
+    props: {
+        resetCommunities: {
+            type: Boolean,
         },
     },
-    emits: ['region']
+    emits: ['region', 'resetCommunitiesToFalse'],
+    watch: {
+        resetCommunities: 'executeOnPropResetChange'
+    },
 }
 </script>
 
@@ -63,10 +83,6 @@ export default {
 .custom-dropdown {
     display: inline-block;
     margin: 10px;
-}
-
-button {
-    cursor: pointer;
 }
 
 .dropdown-content {
@@ -79,11 +95,6 @@ button {
     z-index: 1;
     overflow-y: auto;
     max-height: 200px;
-}
-
-label {
-    display: block;
-    margin-bottom: 8px;
 }
 
 label input[type="checkbox"] {

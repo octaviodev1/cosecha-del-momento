@@ -5,8 +5,8 @@
 
   <ul class="grid w-full gap-6 md:grid-cols-2 font-new-font">
     <li>
-      <input @change="$emit('seasonFilter', checkedSeasons)" v-model="checkedSeasons" type="checkbox" id="spring-option"
-        value="Primavera" class="hidden peer" />
+      <input @change="$emit('seasonFilter', checkedSeasons)" v-model="checkedSeasons" :checked="resetSeason"
+        type="checkbox" id="spring-option" value="Primavera" class="hidden peer" />
       <label for="spring-option"
         class="select-none inline-flex items-center justify-between w-full p-5 bg-white border-2 rounded-lg cursor-pointer peer-checked:border-green hover:text-green peer-checked:text-white peer-checked:bg-green">
         <div class="block">
@@ -16,8 +16,8 @@
       </label>
     </li>
     <li>
-      <input @change="$emit('seasonFilter', checkedSeasons)" v-model="checkedSeasons" type="checkbox" id="summer-option"
-        value="Verano" class="hidden peer" />
+      <input @change="$emit('seasonFilter', checkedSeasons)" v-model="checkedSeasons" :checked="resetSeason"
+        type="checkbox" id="summer-option" value="Verano" class="hidden peer" />
       <label for="summer-option"
         class="select-none inline-flex items-center justify-between w-full p-5 bg-white border-2 rounded-lg cursor-pointer peer-checked:border-green hover:text-green peer-checked:text-white peer-checked:bg-green">
         <div class="block">
@@ -29,8 +29,8 @@
   </ul>
   <ul class="grid w-full gap-6 md:grid-cols-2 mt-4 font-new-font">
     <li>
-      <input @change="$emit('seasonFilter', checkedSeasons)" v-model="checkedSeasons" type="checkbox" id="fall-option"
-        value="Otoño" class="hidden peer" />
+      <input @change="$emit('seasonFilter', checkedSeasons)" v-model="checkedSeasons" :checked="resetSeason"
+        type="checkbox" id="fall-option" value="Otoño" class="hidden peer" />
       <label for="fall-option"
         class="select-none inline-flex items-center justify-between w-full p-5 bg-white border-2 rounded-lg cursor-pointer peer-checked:border-green hover:text-green peer-checked:text-white peer-checked:bg-green">
         <div class="block">
@@ -42,8 +42,8 @@
       </label>
     </li>
     <li>
-      <input @change="$emit('seasonFilter', checkedSeasons)" v-model="checkedSeasons" type="checkbox" id="winter-option"
-        value="Invierno" class="hidden peer" />
+      <input @change="$emit('seasonFilter', checkedSeasons)" v-model="checkedSeasons" :checked="resetSeason"
+        type="checkbox" id="winter-option" value="Invierno" class="hidden peer" />
       <label for="winter-option"
         class="select-none inline-flex items-center justify-between w-full p-5 bg-white border-2 rounded-lg cursor-pointer peer-checked:border-green hover:text-green peer-checked:text-white peer-checked:bg-green">
         <div class="block">
@@ -63,6 +63,32 @@ export default {
       checkedSeasons: []
     }
   },
-  emits: ['seasonFilter']
+  props: {
+    resetSeason: {
+      type: Boolean,
+    },
+  },
+  emits: ['seasonFilter', 'resetSeasonToFalse'],
+  methods: {
+    executeOnPropResetChange() {
+      if (this.resetSeason) {
+        const springOption = document.getElementById("spring-option");
+        const summerOption = document.getElementById("summer-option");
+        const fallOption = document.getElementById("fall-option");
+        const winterOption = document.getElementById("winter-option");
+
+        summerOption.checked = false;
+        springOption.checked = false;
+        fallOption.checked = false;
+        winterOption.checked = false;
+
+        this.checkedSeasons = [],
+        this.$emit('resetSeasonToFalse', false);
+      }
+    }
+  },
+  watch: {
+    resetSeason: 'executeOnPropResetChange'
+  },
 };
 </script>
