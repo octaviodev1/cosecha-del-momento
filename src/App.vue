@@ -7,7 +7,9 @@ import FooterInfo from './components/FooterInfo.vue';
 <template>
   <div id="app" class="flex flex-col h-screen">
     <TopNav />
-    <RouterView class="grow" />
+    <div class="grow">
+      <RouterView />
+    </div>
     <FooterInfo />
   </div>
 </template>

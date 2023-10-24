@@ -1,38 +1,69 @@
 <template>
-    <!-- <div @click="click" class="w-1/3 max-w-sm rounded overflow-hidden shadow-lg p-4" data-te-collapse-init
-        data-te-ripple-init data-te-ripple-color="light" :data-te-target="`#${NAME}`">
-        <img class="w-full" :src="IMG_URL" :alt=NAME>
-        <div class="px-6 py-4">
-            <div class="font-bold text-xl mb-2">{{ NAME }}</div>
-        </div>
-    </div>
-    <div class="!visible hidden" :id="NAME" data-te-collapse-item>
-        <div
-            class="block rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
-            Some placeholder content for the collapse component. This panel is
-            hidden by default but revealed when the user activates the relevant
-            trigger.
-        </div>
-    </div> -->
-    <button
-        class="inline-block rounded shadow-sm bg-green px-7 pb-2.5 pt-3 text-sm font-medium uppercase leading-normal transition duration-150 ease-in-out"
-        data-te-toggle="popover" title="Dismissible popover" data-te-trigger="focus" :data-te-content="fullData"
-        data-te-placement="bottom" data-te-ripple-init data-te-ripple-color="light">
-        <img class="w-full" :src="IMG_URL" :alt=NAME>
+    <!--Button trigger vertically centered scrollable modal-->
+    <button type="button"
+        class="inline-block outline-0 rounded bg-white px-6 pb-2 m-auto pt-2.5 text-xs font-medium uppercase leading-normal transition duration-150 ease-in-out ring-green hover:ring-4"
+        data-te-toggle="modal" :data-te-target="`#${NAME.trim()}`" data-te-ripple-init data-te-ripple-color="light">
+        <img :src="IMG_URL" :alt=NAME>
         <div class="px-6 py-4">
             <div class="font-bold text-xl mb-2">{{ NAME }}</div>
         </div>
     </button>
+
+    <!--Verically centered scrollable modal-->
+    <div data-te-modal-init
+        class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
+        :id="NAME.trim()" tabindex="-1" :aria-labelledby="`#${NAME.trim()}Label`" aria-modal="true" role="dialog">
+        <div data-te-modal-dialog-ref
+            class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
+            <div
+                class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600">
+                <div
+                    class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
+                    <!--Modal title-->
+                    <h5 class="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200"
+                        :id="`${NAME.trim()}Label`">
+                        {{ NAME }}
+                    </h5>
+                    <!--Close button-->
+                    <button type="button"
+                        class="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
+                        data-te-modal-dismiss aria-label="Close">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" class="h-6 w-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!--Modal body-->
+                <div class="relative p-4">
+                    <p>
+                        {{ DESCRIPTION }}
+                    </p>
+                </div>
+
+                <!--Modal footer-->
+                <div
+                    class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
+                    <button type="button"
+                        class="inline-block rounded bg-primary-100 px-6 pb-2 pt-2.5 text-xs font-medium uppercase leading-normal text-primary-700 transition duration-150 ease-in-out hover:bg-primary-accent-100 focus:bg-primary-accent-100 focus:outline-none focus:ring-0 active:bg-primary-accent-200"
+                        data-te-modal-dismiss data-te-ripple-init data-te-ripple-color="light">
+                        Cerrar
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 </template>
 
 <script>
 import {
-    Popover,
+    Modal,
     Ripple,
     initTE,
 } from "tw-elements";
 
-initTE({ Popover, Ripple });
+initTE({ Modal, Ripple });
 export default {
     name: 'CardContent',
     data() {
@@ -67,21 +98,6 @@ export default {
             type: String,
         }
 
-    },
-    computed: {
-        fullData() {
-            const data = {
-                name: this.NAME,
-                description: this.DESCRIPTION,
-                scientific_name: this.SCIENTIFIC_NAME
-            }
-            return JSON.stringify(data)
-        }
-    },
-    methods: {
-        click() {
-            this.display = !this.display
-        }
     },
 }
 </script>
