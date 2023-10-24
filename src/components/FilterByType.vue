@@ -28,8 +28,26 @@ export default {
             choice: ''
         }
     },
-    emits: ['typeSelection']
+    emits: ['typeSelection', 'resetTypeToFalse'],
+    props: {
+        resetType: {
+            type: Boolean,
+        },
+
+    },
+    methods: {
+        executeOnPropResetChange() {
+            if (this.resetType) {
+                const fruitOption = document.getElementById("fruits");
+                const vegetableOption = document.getElementById("vegetables");
+                fruitOption.checked = false;
+                vegetableOption.checked = false;
+                this.$emit('resetTypeToFalse', false);
+            }
+        }
+    },
+    watch: {
+        resetType: 'executeOnPropResetChange'
+    }
 }
 </script>
-
-<style lang="scss" scoped></style>
