@@ -12,12 +12,13 @@
     <div v-else class="flex items-center m-auto">
       <div
         class="block rounded-lg bg-white p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] font-new-font">
-        <h5 class="mb-2 text-2xl font-medium leading-tight text-neutral-800">
+        <h5 class="mb-2 text-2xl font-medium leading-tight text-center">
           No hay resultados
         </h5>
-        <p class="mb-4 text-base">
+        <p class="mb-4 text-base text-center">
           No hay ningún resultado con los parámetros seleccionados
         </p>
+        <img src="@/assets/logos/searching.webp" class="m-auto">
       </div>
     </div>
   </div>
