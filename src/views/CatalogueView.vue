@@ -69,7 +69,6 @@ export default {
       this.filteredProducts = arr.filter(product => region.some(r => product.ORIGIN.includes(r)))
     },
     searchByText(text) {
-      console.log(text);
       this.filteredProducts = this.products
       if (text === '') return
       this.filteredProducts = this.filteredProducts.filter(product => product.NAME.toLowerCase().includes(text.toLowerCase()))
