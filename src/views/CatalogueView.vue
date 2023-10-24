@@ -51,30 +51,28 @@ export default {
   },
   methods: {
     filterProducts(filter) {
-  console.log(filter.season)
-  this.filteredProducts = this.products
-  if (filter && typeof filter.type === 'string' && filter.type !== '')
-    this.filterByType(filter.type, this.filteredProducts)
-  if (filter && Array.isArray(filter.season) && filter.season.length)
-    this.filterBySeason(filter.season, this.filteredProducts)
-  if (filter && Array.isArray(filter.region) && filter.region.length)
-    this.filterByRegion(filter.region, this.filteredProducts)
-},
-filterByType(type, arr) {
-  this.filteredProducts = arr.filter(product => product.TYPE === type)
-},
-filterBySeason(season, arr) {
-  this.filteredProducts = arr.filter(product => season.some(s => product.SEASON.includes(s)))
-},
-filterByRegion(region, arr) {
-  this.filteredProducts = arr.filter(product => region.some(r => product.ORIGIN.includes(r)))
-},
-searchByText(text) {
-  console.log(text);
-  this.filteredProducts = this.products
-  if (text === '') return
-  this.filteredProducts = this.filteredProducts.filter(product => product.NAME.toLowerCase().includes(text.toLowerCase()))
-}
+      this.filteredProducts = this.products
+      if (filter && typeof filter.type === 'string' && filter.type !== '')
+        this.filterByType(filter.type, this.filteredProducts)
+      if (filter && Array.isArray(filter.season) && filter.season.length)
+        this.filterBySeason(filter.season, this.filteredProducts)
+      if (filter && Array.isArray(filter.region) && filter.region.length)
+        this.filterByRegion(filter.region, this.filteredProducts)
+    },
+    filterByType(type, arr) {
+      this.filteredProducts = arr.filter(product => product.TYPE === type)
+    },
+    filterBySeason(season, arr) {
+      this.filteredProducts = arr.filter(product => season.some(s => product.SEASON.includes(s)))
+    },
+    filterByRegion(region, arr) {
+      this.filteredProducts = arr.filter(product => region.some(r => product.ORIGIN.includes(r)))
+    },
+    searchByText(text) {
+      this.filteredProducts = this.products
+      if (text === '') return
+      this.filteredProducts = this.filteredProducts.filter(product => product.NAME.toLowerCase().includes(text.toLowerCase()))
+    }
   }
 };
 </script>

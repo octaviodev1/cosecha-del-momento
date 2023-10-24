@@ -8,9 +8,8 @@
     <FilterByCommunities :resetCommunities="resetForCommunitiesIsClicked"
       @resetCommunitiesToFalse="resetCommunitiesToFalse" @region="registerRegion" />
     <div class="flex justify-center items-center">
-      <button data-te-ripple-init @click="$emit('filter', filter)"
+      <button id="btn-filter" data-te-ripple-init @click="$emit('filter', filter)"
         class="p-4 mr-3 bg-green text-white rounded-3xl grow  font-bold">Filtrar</button>
-      <!-- <button @click="resetFilters" class="p-3 bg-green text-white w-full">Borrar Filtros</button> -->
       <button data-te-ripple-init class="flex items-center rounded-3xl p-4 bg-deep-red text-white grow-0 font-bold"
         @click="resetFilters">
         <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="24" height="24"
@@ -79,6 +78,7 @@ export default {
       this.resetForTypeIsClicked = true;
       this.resetForSeasonIsClicked = true;
       this.resetForCommunitiesIsClicked = true;
+      document.getElementById('btn-filter').click();
     },
     resetTypeToFalse() {
       this.resetForTypeIsClicked = false;
