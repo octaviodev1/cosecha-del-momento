@@ -2,7 +2,8 @@
     <!--Button trigger vertically centered scrollable modal-->
     <button type="button"
         class="inline-block outline-0 rounded bg-white px-6 pb-2 m-auto pt-2.5 text-xs font-medium uppercase leading-normal transition duration-150 ease-in-out ring-green hover:ring-4"
-        data-te-toggle="modal" :data-te-target="`#${NAME.trim()}`" data-te-ripple-init data-te-ripple-color="light">
+        data-te-toggle="modal" :data-te-target="`#${NAME.replace(/ /g, '')}`" data-te-ripple-init
+        data-te-ripple-color="light">
         <img :src="IMG_URL" :alt=NAME>
         <div class="px-6 py-4">
             <div class="font-bold text-xl mb-2">{{ NAME }}</div>
@@ -12,7 +13,8 @@
     <!--Verically centered scrollable modal-->
     <div data-te-modal-init
         class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
-        :id="NAME.trim()" tabindex="-1" :aria-labelledby="`#${NAME.trim()}Label`" aria-modal="true" role="dialog">
+        :id="NAME.replace(/ /g, '')" tabindex="-1" :aria-labelledby="`#${NAME.replace(/ /g, '')}Label`" aria-modal="true"
+        role="dialog">
         <div data-te-modal-dialog-ref
             class="pointer-events-none relative flex min-h-[calc(100%-1rem)] w-auto translate-y-[-50px] items-center opacity-0 transition-all duration-300 ease-in-out min-[576px]:mx-auto min-[576px]:mt-7 min-[576px]:min-h-[calc(100%-3.5rem)] min-[576px]:max-w-[500px]">
             <div
@@ -21,7 +23,7 @@
                     class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-2 border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
                     <!--Modal title-->
                     <h5 class="text-xl font-medium leading-normal text-neutral-800 dark:text-neutral-200"
-                        :id="`${NAME.trim()}Label`">
+                        :id="`${NAME.replace(/ /g, '')}Label`">
                         {{ NAME }}
                     </h5>
                     <!--Close button-->
@@ -63,7 +65,6 @@ import {
     initTE,
 } from "tw-elements";
 
-initTE({ Modal, Ripple });
 export default {
     name: 'CardContent',
     data() {
@@ -71,6 +72,9 @@ export default {
             display: false,
             origin: this.ORIGIN.join(", ")
         }
+    },
+    mounted() {
+        initTE({ Modal, Ripple });
     },
     props: {
         NAME: {
