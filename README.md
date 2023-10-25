@@ -17,11 +17,12 @@ Este proyecto está enfocado en poder ver qué frutas y verduras están de tempo
 ***
 
 - [@MartaLax](https://github.com/MartaLax) [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marta-ermerinda-lax-casta%C3%B1o/)
-![Logo](https://iili.io/JKkGD2j.png)
 
-![Logo](https://iili.io/JKkMCpp.png)
+***
 
 <div align="center">
 <img src="https://iili.io/JKkMCpp.png" >
+</div>
+<div align="center">
 <img src="https://iili.io/JKkGD2j.png" >
 </div>
