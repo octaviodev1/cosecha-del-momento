@@ -76,7 +76,7 @@
         <div class="flex flex-row justify-center items-center gap-40">
             <img src="../assets/img-home/calabazas.webp" alt="calabazas" class="h-52 w-52">
             <RouterLink to="/catalogue"
-                class="inline-flex bg-green rounded-md text-lg text-white py-10 px-14 font-bold transition duration-300 ease-in-out hover:scale-110 hover:bg-yellow">
+                class="inline-flex bg-green rounded-md text-lg text-white py-10 px-14 font-bold transition duration-300 ease-in-out hover:scale-110 hover:bg-deep-green">
                 CATÁLOGO
             </RouterLink>
             <img src="../assets/img-home/fresas.webp" alt="fresas" class="h-52 w-52">
