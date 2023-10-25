@@ -8,15 +8,21 @@ Este proyecto está enfocado en poder ver qué frutas y verduras están de tempo
 
 ## Authors
 
-- [@octaviodev1](https://github.com/octaviodev1) [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/octavian-mihail-badea/)
+- [@octaviodev1](https://github.com/octaviodev1)
+
+  [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/octavian-mihail-badea/)
 
 ***
 
-- [@braisvial](https://github.com/braisvial) [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/braisvila/)
+- [@braisvial](https://github.com/braisvial)
+  
+  [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/braisvila/)
 
 ***
 
-- [@MartaLax](https://github.com/MartaLax) [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marta-ermerinda-lax-casta%C3%B1o/)
+- [@MartaLax](https://github.com/MartaLax)
+ 
+  [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marta-ermerinda-lax-casta%C3%B1o/)
 
 ***
 
