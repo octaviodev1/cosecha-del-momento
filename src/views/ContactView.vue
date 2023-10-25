@@ -70,6 +70,9 @@ export default {
     methods: {
         redireccionarInicio() {
             this.$router.push('/');
+            document.getElementById('nameFormInput').value = "";
+            document.getElementById('emailFormInput').value = "";
+            document.getElementById('messageFormInput').value = "";
         }
     },
     mounted() {
