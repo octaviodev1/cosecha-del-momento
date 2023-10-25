@@ -7,7 +7,6 @@
  ## Table of Contents
 1. [General Info](#general-info)
 2. [Technologies](#technologies)
-3. [Technologies](#technologies)
 4. [Recommended IDE Setup](#recommended-ide-setup)
 5. [Customize configuration](#customize-configuration)
 6. [Environment Variables](#environment-variables)
