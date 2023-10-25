@@ -1,41 +1,27 @@
-# cosecha-del-momento
+# Cosecha del Momento
 
-This template should help get you started developing with Vue 3 in Vite.
+Este proyecto está enfocado en poder ver qué frutas y verduras están de temporada en España.
 
-## Recommended IDE Setup
+***
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+ En colaboración con la EOI.
 
-## Customize configuration
+## Authors
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- [@octaviodev1](https://github.com/octaviodev1) [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/octavian-mihail-badea/)
 
-## Project Setup
+***
 
-```sh
-npm install
-```
+- [@braisvial](https://github.com/braisvial) [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/braisvila/)
 
-### Compile and Hot-Reload for Development
+***
 
-```sh
-npm run dev
-```
+- [@MartaLax](https://github.com/MartaLax) [![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/marta-ermerinda-lax-casta%C3%B1o/)
+![Logo](https://iili.io/JKkGD2j.png)
 
-### Compile and Minify for Production
+![Logo](https://iili.io/JKkMCpp.png)
 
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+<div align="center">
+<img src="https://iili.io/JKkMCpp.png" >
+<img src="https://iili.io/JKkGD2j.png" >
+</div>
