@@ -2,11 +2,12 @@
   <div class="flex flex-row m-4 h-[88%] gap-16">
 
     <div
-      class="flex flex-col w-[28%] h-fit justify-start ml-4 mb-4 rounded-2xl p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
+      class="flex flex-col w-[28%] h-[80vh] justify-start ml-4 mb-4 rounded-2xl p-6 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)]">
       <FiltersSection @filter="filterProducts" @search="searchByText" />
     </div>
 
-    <div v-if="filteredProducts.length" class="flex-1 ml-5 p-4 h-[80vh] mb-14 overflow-y-scroll">
+    <div v-if="filteredProducts.length"
+      class="flex-1 shadow-[0_2px_15px_-3px_rgba(0,0,0,0.07),0_10px_20px_-2px_rgba(0,0,0,0.04)] rounded-2xl ml-5 p-4 h-[80vh] mb-14 overflow-y-scroll">
       <CatalogueContent :products="filteredProducts" />
     </div>
     <div v-else class="flex items-center m-auto">
