@@ -1,7 +1,7 @@
 <template>
   <div>
     <FilterByText @search-text-updated="registerText" />
-    
+
     <FilterByType :resetType="resetForTypeIsClicked" @resetTypeToFalse="resetTypeToFalse"
       @type-selection="registerType" />
 
@@ -13,9 +13,9 @@
 
     <div class="flex justify-center items-center">
       <button id="btn-filter" data-te-ripple-init @click="$emit('filter', filter)"
-        class="p-4 mr-3 bg-green text-white rounded-xl grow  font-bold">Filtrar</button>
+        class="p-4 mr-3 bg-green text-white rounded-xl grow  font-bold hover:bg-deep-green">Filtrar</button>
       <button data-te-ripple-init
-        class="flex items-center justify-center:center; rounded-xl p-4 bg-red text-white grow-0 font-bold"
+        class="flex items-center justify-center:center rounded-xl p-4 bg-red text-white grow-0 font-bold border-red hover:bg-deep-red"
         @click="resetFilters">
         <svg xmlns="http://www.w3.org/2000/svg" id="Outline" viewBox="0 0 24 24" width="24" height="24" fill="white">
           <path
