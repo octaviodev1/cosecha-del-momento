@@ -7,7 +7,7 @@
                 <div class="mr-12 hidden lg:block">
                     <span>Conecta con nosotros en nuestras redes sociales:</span>
                 </div>
-                <!-- Social network icons container -->
+
                 <div class="flex justify-center">
                     <a href="https://twitter.com/Cosecha_Momento"
                         class="mr-6 text-neutral-600 dark:text-neutral-200 p-2 rounded-full transition duration-300 ease-in-out hover:bg-green"

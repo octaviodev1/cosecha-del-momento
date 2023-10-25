@@ -1,5 +1,4 @@
 <template>
-    <!--Button trigger vertically centered scrollable modal-->
     <button type="button"
         class="inline-block outline-0 rounded bg-white px-6 pb-2 m-auto pt-2.5 text-xs font-medium uppercase leading-normal transition duration-150 ease-in-out ring-green hover:ring-4"
         data-te-toggle="modal" :data-te-target="`#${NAME.replace(/ /g, '')}`" data-te-ripple-init
@@ -10,7 +9,6 @@
         </div>
     </button>
 
-    <!--Verically centered scrollable modal-->
     <div data-te-modal-init
         class="fixed left-0 top-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
         :id="NAME.replace(/ /g, '')" tabindex="-1" :aria-labelledby="`#${NAME.replace(/ /g, '')}Label`" aria-modal="true"
@@ -21,7 +19,7 @@
                 class="pointer-events-auto relative flex w-full flex-col rounded-md border-none bg-white bg-clip-padding text-current shadow-lg outline-none dark:bg-neutral-600">
                 <div
                     class="flex flex-shrink-0 items-center justify-between rounded-t-md border-b-[1px] border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
-                    <!--Modal title-->
+
                     <img class="w-32 h-32 p-1 ring-2 ring-green rounded-full" :src="IMG_URL" />
                     <div class="flex flex-col justify-center">
                         <h5 class="text-3xl font-bold mb-1" :id="`${NAME.replace(/ /g, '')}Label`">
@@ -29,7 +27,7 @@
                         </h5>
                         <p class="text-xl text-green font-bold text-center">{{ TYPE }}</p>
                     </div>
-                    <!--Close button-->
+
                     <button type="button"
                         class="box-content rounded-none border-none hover:no-underline hover:opacity-75 focus:opacity-100 focus:shadow-none focus:outline-none"
                         data-te-modal-dismiss aria-label="Close">
@@ -40,7 +38,7 @@
                     </button>
                 </div>
 
-                <!--Modal body-->
+
                 <div class="relative p-4">
                     <h2 class="font-bold text-xl p-4">Descripción</h2>
                     <p class="leading-7 pl-4">
@@ -73,7 +71,7 @@
                     </div>
                 </div>
 
-                <!--Modal footer-->
+                
                 <div
                     class="flex flex-shrink-0 flex-wrap items-center justify-end rounded-b-md border-t-[1px] border-neutral-100 border-opacity-100 p-4 dark:border-opacity-50">
                     <button type="button"

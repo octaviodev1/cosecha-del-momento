@@ -28,11 +28,7 @@ const handler = async (event) => {
     querySnapshot.forEach((doc) => {
       data.push(doc.data());
     });
-    // console.log(querySnapshot.size);
-    // querySnapshot.forEach((doc) => {
-    //   console.log(doc.id);
-    //   console.table(doc.data());
-    // });
+    
     return {
       statusCode: 200,
       body: JSON.stringify(data),
