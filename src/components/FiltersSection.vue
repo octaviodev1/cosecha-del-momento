@@ -1,12 +1,16 @@
 <template>
   <div>
     <FilterByText @search-text-updated="registerText" />
+    
     <FilterByType :resetType="resetForTypeIsClicked" @resetTypeToFalse="resetTypeToFalse"
       @type-selection="registerType" />
+
     <FilterBySeason :resetSeason="resetForSeasonIsClicked" @resetSeasonToFalse="resetSeasonToFalse"
       @season-filter="registerSeason" />
+
     <FilterByCommunities :resetCommunities="resetForCommunitiesIsClicked"
       @resetCommunitiesToFalse="resetCommunitiesToFalse" @region="registerRegion" />
+
     <div class="flex justify-center items-center">
       <button id="btn-filter" data-te-ripple-init @click="$emit('filter', filter)"
         class="p-4 mr-3 bg-green text-white rounded-xl grow  font-bold">Filtrar</button>
