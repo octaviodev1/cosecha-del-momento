@@ -11,18 +11,19 @@ module.exports = {
       white: "#ffffff",
       black: "#000000",
       red: "#d94052",
-      "deep-red": "#ff0000",
+      "deep-red": "#a83240",
       orange: "#ee7e4c",
       yellow: "#ead56c",
       green: "#0a996f",
+      "deep-green": "#06805c",
       "green-light": "#e7fdf7",
       gray: "#898b75",
       transparent: "#ffffff00",
     },
     extend: {
       fontFamily: {
-        'new-font' : ['PT Sans', 'sans-serif']
-      }
+        "new-font": ["PT Sans", "sans-serif"],
+      },
     },
   },
   darkMode: "class",
