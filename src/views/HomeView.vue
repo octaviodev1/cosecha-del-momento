@@ -1,6 +1,4 @@
 <template>
-    <TopNav></TopNav>
-
     <div id="carousel" class="relative" data-te-carousel-init data-te-ride="carousel">
         <div class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
             data-te-carousel-indicators>
@@ -14,12 +12,12 @@
                 class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
                 aria-label="Slide 3"></button>
         </div>
-        <div class="relative w-full overflow-hidden after:clear-both after:block after:content-['']">
+        <div class="relative w-full overflow-hidden after:clear-both after:block after:content-[''] font-new-font">
             <div class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 data-te-carousel-active data-te-carousel-item style="backface-visibility: hidden">
-                <img loading="lazy" src="../assets/img/naranjos.jpg" class="block w-full" alt="..." />
+                <img src="../assets/img-home/naranjos.webp" class="block w-full h-full" alt="naranjos" />
                 <div class="absolute top-60 left-48 hidden py-5  text-white md:block">
-                    <h2 class="mb-5 text-6xl font-bold">!Bienvenido a Cosecha del Momento¡</h2>
+                    <h2 class="mb-5 text-6xl font-bold">¡Bienvenido a Cosecha del Momento!</h2>
                     <p class="text-lg font-bold">Descubre la riqueza de la agricultura española a través de nuestra
                         amplia gama de frutas y verduras.
                     </p>
@@ -27,7 +25,7 @@
             </div>
             <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 data-te-carousel-item style="backface-visibility: hidden">
-                <img loading="lazy" src="../assets/img/viñedo.jpg" class="block w-full" alt="..." />
+                <img src="../assets/img-home/viñedo.webp" class="block w-full h-full" alt="vinedo" />
                 <div class="absolute top-60 left-48 hidden py-5  text-white md:block">
                     <h2 class="mb-5 text-6xl font-bold">!Bienvenido a Cosecha del Momento¡</h2>
                     <p class="text-lg font-bold">Te proporcionamos información detallada sobre cada producto y cuándo es la
@@ -38,7 +36,7 @@
             </div>
             <div class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none"
                 data-te-carousel-item style="backface-visibility: hidden">
-                <img loading="lazy" src="../assets/img/platanos.jpg" class="block w-full" alt="..." />
+                <img src="../assets/img-home/platanos.webp" class="block w-full h-full" alt="platanos" />
                 <div class="absolute top-60 left-48 hidden py-5  text-white md:block">
                     <h2 class="mb-5 text-6xl font-bold">!Bienvenido a Cosecha del Momento¡</h2>
                     <p class="text-lg font-bold">¡Súmate a la frescura y la diversidad de la producción española de
@@ -73,36 +71,28 @@
                 class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]">Next</span>
         </button>
     </div>
-    <div class="flex flex-col mt-16 mb-24 justify-center items-center ">
+    <div class="flex flex-col mt-16 mb-24 justify-center items-center font-new-font">
         <h3 class="text-xl">Accede a nuestra sección de frutas y verduras pulsando aquí:</h3>
         <div class="flex flex-row justify-center items-center gap-40">
-            <img src="https://iili.io/JFvEJae.png" alt="">
+            <img src="../assets/img-home/calabazas.webp" alt="calabazas" class="h-52 w-52">
             <RouterLink to="/catalogue"
-                class="inline-flex bg-green rounded-md text-lg text-white py-10 px-14 font-bold transition duration-300 ease-in-out hover:scale-110 hover:bg-yellow">
+                class="inline-flex bg-green rounded-md text-lg text-white py-10 px-14 font-bold transition duration-300 ease-in-out hover:scale-110 hover:bg-deep-green">
                 CATÁLOGO
             </RouterLink>
-            <img src="https://iili.io/JFvEAAJ.png" alt="">
+            <img src="../assets/img-home/fresas.webp" alt="fresas" class="h-52 w-52">
         </div>
 
     </div>
-
-
-    <FooterInfo></FooterInfo>
 </template>
 
 <script>
-import TopNav from "@/components/TopNav.vue";
-import FooterInfo from "../components/FooterInfo.vue";
+
 import {
     Carousel,
     initTE,
 } from "tw-elements";
 export default {
     name: "HomeView",
-    components: {
-        TopNav,
-        FooterInfo,
-    },
     mounted() {
         initTE({ Carousel });
     },

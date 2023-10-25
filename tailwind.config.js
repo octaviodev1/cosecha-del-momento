@@ -1,5 +1,6 @@
+/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: [
     "./index.html",
     "./src/**/*.{vue,js,ts,jsx,tsx}",
@@ -10,14 +11,21 @@ export default {
       white: "#ffffff",
       black: "#000000",
       red: "#d94052",
+      "deep-red": "#a83240",
       orange: "#ee7e4c",
       yellow: "#ead56c",
       green: "#0a996f",
+      "deep-green": "#06805c",
+      "green-light": "#e7fdf7",
       gray: "#898b75",
       transparent: "#ffffff00",
     },
-    extend: {},
+    extend: {
+      fontFamily: {
+        "new-font": ["PT Sans", "sans-serif"],
+      },
+    },
   },
   darkMode: "class",
-  plugins: ["tw-elements/dist/plugin.cjs"],
+  plugins: [require("tw-elements/dist/plugin.cjs")],
 };
