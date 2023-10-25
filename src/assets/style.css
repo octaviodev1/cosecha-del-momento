@@ -5,6 +5,6 @@
 @layer base {
     @font-face {
         font-family: "PT Sans";
-        src: url("/public/fonts/ptsans.woff2") format("woff2");
+        src: url("/fonts/ptsans.woff2") format("woff2");
     }
 }
