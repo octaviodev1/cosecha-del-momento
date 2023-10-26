@@ -19,7 +19,7 @@
         <p class="mb-4 text-base text-center">
           Espera un momento mientras cargan las frutas y verduras
         </p>
-        <img src="@/assets/logos/searching.webp" class="m-auto">
+        <img src="@/assets/logos/loading_banana.webp" class="m-auto">
       </div>
 
       <div v-else
