@@ -47,6 +47,8 @@ export default {
     },
     mounted() {
         initTE({ Ripple, Select });
+        const selectCommunitiesEl = this.$refs.selectByCommunities;
+        Select.getOrCreateInstance(selectCommunitiesEl)
     },
     methods: {
         executeOnPropResetChange() {
