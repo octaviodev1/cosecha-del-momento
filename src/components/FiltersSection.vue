@@ -61,18 +61,51 @@ export default {
     FilterByCommunities,
   },
   methods: {
+    /**
+ * Método para emitir el evento search al componente padre y realizar una búsqueda.
+ *
+ * @param {string} text El texto que se utilizará para la búsqueda.
+ * @example
+ * this.registerText('example') => v-on:search = handler('example');
+ */
     registerText(text) {
       this.$emit('search', text)
     },
+    /**
+ * Método para registrar el valor de filtrar por tipo en un objeto al recibir un emit del componente hijo.
+ *
+ * @param {string} type - El tipo que se utilizará para filtrar los resultados.
+ * @example
+ * this.registerType('example') => filter.type = 'example';
+ */
     registerType(type) {
       this.filter.type = type;
     },
+    /**
+ * Método para registrar el valor de filtrar por temporada en un objeto al recibir un emit del componente hijo.
+ *
+ * @param {array} season - La temporada que se utilizará para filtrar los resultados.
+ * @example
+ * this.registerSeason(['example1', 'example2']) => filter.season = ['example1', 'example2'];
+ */
     registerSeason(season) {
       this.filter.season = season
     },
+    /**
+  * Método para registrar el valor de filtrar por comunidad en un objeto al recibir un emit del componente hijo.
+  *
+  * @param {array} region - La comunidad que se utilizará para filtrar los resultados.
+  * @example
+  * this.registerRegion(['example1', 'example2']) => filter.region = ['example1', 'example2'];
+  */
     registerRegion(region) {
       this.filter.region = region
     },
+    /**
+ * Restablece todos los filtros a sus valores iniciales.
+ * También activa las variables de control para reiniciar los filtros específicos.
+ * Actualiza el componente padre al valor inicial
+ */
     resetFilters() {
       this.filter = {
         type: "",
@@ -84,12 +117,21 @@ export default {
       this.resetForCommunitiesIsClicked = true;
       document.getElementById('btn-filter').click();
     },
+    /**
+ * Restablece la variable de control para el filtro de tipo a falso.
+ */
     resetTypeToFalse() {
       this.resetForTypeIsClicked = false;
     },
+    /**
+ * Restablece la variable de control para el filtro de temporada a falso.
+ */
     resetSeasonToFalse() {
       this.resetForSeasonIsClicked = false;
     },
+    /**
+ * Restablece la variable de control para el filtro de comunidades a falso.
+ */
     resetCommunitiesToFalse() {
       this.resetForCommunitiesIsClicked = false;
     },
