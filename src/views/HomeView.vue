@@ -27,7 +27,7 @@
                 data-te-carousel-item style="backface-visibility: hidden">
                 <img src="../assets/img-home/viñedo.webp" class="block w-full h-full" alt="vinedo" />
                 <div class="absolute top-60 left-48 hidden py-5  text-white md:block">
-                    <h2 class="mb-5 text-6xl font-bold">!Bienvenido a Cosecha del Momento¡</h2>
+                    <h2 class="mb-5 text-6xl font-bold">¡Bienvenido a Cosecha del Momento!</h2>
                     <p class="text-lg font-bold">Te proporcionamos información detallada sobre cada producto y cuándo es la
                         temporada ideal para
                         disfrutarlos.
@@ -38,7 +38,7 @@
                 data-te-carousel-item style="backface-visibility: hidden">
                 <img src="../assets/img-home/platanos.webp" class="block w-full h-full" alt="platanos" />
                 <div class="absolute top-60 left-48 hidden py-5  text-white md:block">
-                    <h2 class="mb-5 text-6xl font-bold">!Bienvenido a Cosecha del Momento¡</h2>
+                    <h2 class="mb-5 text-6xl font-bold">¡Bienvenido a Cosecha del Momento!</h2>
                     <p class="text-lg font-bold">¡Súmate a la frescura y la diversidad de la producción española de
                         alimentos! ¿En qué te gustaría
                         sumergirte hoy?
